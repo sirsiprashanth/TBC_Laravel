@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Agatho ThinCaps';
+	src: url(../../assets/fonts/AgathoThinCaps.woff2) format('woff2'),
+	url(../../assets/fonts/AgathoThinCaps.woff) format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}

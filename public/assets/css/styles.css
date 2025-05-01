@@ -1,0 +1,35 @@
+@media (min-width: 300px) {
+  .someInformation {
+    font-family: Agatho;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .someInformation {
+    font-family: Agatho;
+    font-size: 112px;
+  }
+}
+
+@media (min-width: 992px) {
+  .yourfuture {
+    font-family: Agatho;
+    font-size: 121px;
+  }
+}
+
+@media (min-width: 300px) {
+  .yourfuture {
+    font-family: 'Agatho';
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .yourfuture {
+    font-family: 'Agatho';
+    font-size: 112px;
+  }
+}
+

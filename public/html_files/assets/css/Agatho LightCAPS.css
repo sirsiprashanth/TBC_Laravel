@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Agatho LightCAPS';
+	src: url(../../assets/fonts/AgathoLightCAPS.woff2) format('woff2'),
+	url(../../assets/fonts/AgathoLightCAPS.woff) format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}

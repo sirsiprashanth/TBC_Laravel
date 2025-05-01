@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Agatho RegularCAPS';
+	src: url(../../assets/fonts/AgathoRegularCAPS.woff2) format('woff2'),
+	url(../../assets/fonts/AgathoRegularCAPS.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

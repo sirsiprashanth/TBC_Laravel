@@ -1,3 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Bootstrap */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom styles */
+body {
+    background: rgb(255,241,222);
+}
+
+/* Font styles will be added via custom classes */
+.font-agatho {
+    font-family: 'Agatho', serif;
+}
+
+.font-glancyr {
+    font-family: 'Glancyr', sans-serif;
+}
+
+/* Remove Tailwind directives temporarily */

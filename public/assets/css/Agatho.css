@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Agatho';
+	src: url(../../assets/fonts/AgathoThin.woff2) format('woff2'),
+	url(../../assets/fonts/AgathoThin.woff) format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Agatho';
+	src: url(../../assets/fonts/AgathoLight.woff2) format('woff2'),
+	url(../../assets/fonts/AgathoLight.woff) format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Agatho';
+	src: url(../../assets/fonts/AgathoRegular.woff2) format('woff2'),
+	url(../../assets/fonts/AgathoRegular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
