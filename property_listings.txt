@@ -1,0 +1,129 @@
+XML PROPERTY LISTINGS ANALYSIS
+
+Total Properties: 71 (from <Count>71</Count>)
+
+PROPERTY 1:
+-----------
+Reference Number: AP7086
+Property Name: Bahar 2
+Community: Jumeirah Beach Residence
+Built-up Area: 2990.05 sq ft
+Status: Vacant
+Bedrooms: 3
+Bathrooms: 4 (NoOfBathrooms)
+Unit Floor: N/A
+Price: AED 5,999,898.0000
+Location: Marina District, Dubai, United Arab Emirates
+Agent: Liam Pelser
+Contact Number: 971585117221
+Property ID: 3572
+Country ID: 65946
+State ID: 55367
+City ID: 69178
+District ID: 190886
+Community ID: 19924
+Sub-Community ID: 199916
+Coordinates: 55.13935,25.07969
+Marketing Title: "Rare Unit | Fully Renovated | Full Sea View"
+Last Updated: 5/9/2025 10:31:15 AM
+Listing Date: 3/12/2025 4:13:14 PM
+
+Description:
+Liam and The Boros Collection (The Luxury Collection Real Estate) are pleased to present this stunning rare JBR loft apartment new onto the market. The property has been newly renovated with modern interiors and furnished to an extremely high standard, boasting fantastic Dubai Eye and sea views, the apartment is bright and spacious throughout and allows you to come through the double-height ceiling and windows. On entering you are greeted with high open plan living and dining area, a fully equipped kitchen, upstairs there is a spacious master bedroom with built-in master bed with built-in wardrobe and En-suite plus a further guest study area.
+
+This is a must-view property. Property Details: - 3 Bedrooms - Study Room - Sea and Dubai Eye Views - Fully Furnished - Modern Upgrades - BUA: Approximately 2,990.05 sq. ft. - Extremely Rare on the Market - Open Layout - Vacant for more details and information please contact Liam Pelser at +971 58 511 7221 or email at liam@theboroslcollection.com.
+
+PROPERTY FIELDS (XML Tags):
+---------------------------
+<PageIndex>
+<Count>
+<Category>
+<Code>
+<Status>
+<RefNo>
+<Community>
+<PropertyName>
+<BuiltupArea>
+<Bedrooms>
+<PrimaryUnitView>
+<PrimaryUnitViewId>
+<SecondaryUnitView>
+<SecondaryUnitViewId>
+<UnitFloor>
+<FloorNo>
+<HandoverDate>
+<Agent>
+<ContactNumber>
+<Remarks>
+<CountryName>
+<StateName>
+<CityName>
+<DistrictName>
+<MarketingId>
+<FinancingCompany>
+<Parking>
+<SubType>
+<SellPrice>
+<SubCommunity>
+<PropertyOverview>
+<LocalAreaAmenitiesDesc>
+<DocumentWeb>
+<NoOfBathrooms>
+<RefUnitCategory>
+<PDFBrochureLink>
+<ApartmentType>
+<PropertyID>
+<PropertyOwnershipDesc>
+<CountryID>
+<StateID>
+<CityID>
+<DistrictID>
+<CommunityID>
+<SubCommunityID>
+<AgentRefNo>
+<ProGooglecoordinates>
+<BadPkg>
+<SalesmanEmail>
+<LastUpdated>
+<ListingDate>
+<ExpiryDate>
+<RecommendedProperties>
+<MarketingTitle>
+
+RECOMMENDED DATA MODEL FIELDS:
+-----------------------------
+- id (primary key, auto incrementing)
+- reference_number (string, unique)
+- property_name (string)
+- community (string)
+- sub_community (string, nullable)
+- built_up_area (decimal, nullable)
+- status (string)
+- bedrooms (integer, nullable)
+- bathrooms (float, nullable)
+- unit_floor (string, nullable)
+- floor_no (string, nullable)
+- price (decimal, 2 decimal places)
+- location (string)
+- city (string)
+- state (string)
+- country (string)
+- district (string, nullable)
+- agent_name (string, nullable)
+- agent_contact (string, nullable)
+- property_external_id (integer, unique)
+- description (text)
+- marketing_title (string, nullable)
+- parking (string, nullable)
+- coordinates_latitude (decimal, nullable)
+- coordinates_longitude (decimal, nullable)
+- last_updated (datetime, nullable)
+- listing_date (datetime, nullable)
+- expiry_date (datetime, nullable)
+- brochure_link (string, nullable)
+- primary_view (string, nullable)
+- secondary_view (string, nullable)
+- property_type (string, nullable)
+- images (json, store multiple images)
+- features (json, store amenities and features)
+- external_ids (json, store all the external IDs like CountryID, StateID, etc.)

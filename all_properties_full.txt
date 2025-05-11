@@ -1,0 +1,5 @@
+ALL PROPERTIES FROM XML FEED
+
+Total Properties in Feed: 0
+
+No properties found in the XML feed.

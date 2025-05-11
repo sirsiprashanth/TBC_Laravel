@@ -1,47 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from '@inertiajs/react';
-import axios from 'axios';
 
-export default function FeaturedProperties() {
-    // State for properties and loading
-    const [properties, setProperties] = useState([]);
-    const [loading, setLoading] = useState(true);
+export default function FeaturedProperties({ propertiesData = { properties: [], count: 0 } }) {
+    // Extract properties and count from props with defaults
+    const { properties: initialProperties = [], count = 0 } = propertiesData;
+
+    // State for loading and error
     const [error, setError] = useState(null);
-    
+    const [loading, setLoading] = useState(false);
+
+    // State for properties
+    const [properties, setProperties] = useState(initialProperties);
+
+    // Property type filter
+    const [activeFilter, setActiveFilter] = useState('All');
+
     // Pagination state
     const [currentPage, setCurrentPage] = useState(1);
-    const [totalProperties, setTotalProperties] = useState(0);
     const itemsPerPage = 6; // 2 rows of 3 properties
-    
-    // Fetch properties from our Laravel backend test endpoint
+
+    // Apply filter when changed
+    const applyFilter = (filter) => {
+        setActiveFilter(filter);
+        setCurrentPage(1); // Reset to first page when filter changes
+
+        if (filter === 'All') {
+            setProperties(initialProperties);
+        } else {
+            const filtered = initialProperties.filter(property =>
+                property.unitType === filter
+            );
+            setProperties(filtered);
+        }
+    };
+
+    // Initialize properties from props when they change
     useEffect(() => {
-        const fetchProperties = async () => {
-            try {
-                setLoading(true);
-                
-                // Use only our test endpoint with realistic data for now
-                const response = await axios.get('/api/properties/test');
-                
-                if (response.data.success) {
-                    setProperties(response.data.properties);
-                    setTotalProperties(response.data.count);
-                } else {
-                    throw new Error(response.data.message || 'Failed to fetch properties');
-                }
-                
-                setLoading(false);
-            } catch (err) {
-                console.error('Error fetching properties:', err);
-                setError('Failed to load properties. Using local fallback properties.');
-                setLoading(false);
-                
-                // Fallback to static data in case of error
-                setProperties(fallbackProperties);
-            }
-        };
-        
-        fetchProperties();
-    }, []);
+        setProperties(initialProperties);
+    }, [initialProperties]);
     
     // Get current properties based on pagination
     const indexOfLastProperty = currentPage * itemsPerPage;
@@ -149,63 +145,8 @@ Website: www.boros.com
         document.body.removeChild(a);
     };
     
-    // Fallback properties in case API fails
-    const fallbackProperties = [
-        {
-            id: 1,
-            name: 'Damac Hills 1, Calero Cluster ADR',
-            price: 'AED 6,000,000',
-            bedrooms: 4,
-            bathrooms: 3,
-            image: '/assets/img/property.png',
-            link: '#'
-        },
-        {
-            id: 2,
-            name: 'Damac Hills 1, Calero Cluster ADR',
-            price: 'AED 6,000,000',
-            bedrooms: 4,
-            bathrooms: 3,
-            image: '/assets/img/property.png',
-            link: '#'
-        },
-        {
-            id: 3,
-            name: 'Damac Hills 1, Calero Cluster ADR',
-            price: 'AED 6,000,000',
-            bedrooms: 4,
-            bathrooms: 3,
-            image: '/assets/img/property.png',
-            link: '#'
-        },
-        {
-            id: 4,
-            name: 'Damac Hills 1, Calero Cluster ADR',
-            price: 'AED 7,200,000',
-            bedrooms: 5,
-            bathrooms: 4,
-            image: '/assets/img/property.png',
-            link: '#'
-        },
-        {
-            id: 5,
-            name: 'Damac Hills 1, Calero Cluster ADR',
-            price: 'AED 7,200,000',
-            bedrooms: 5,
-            bathrooms: 4,
-            image: '/assets/img/property.png',
-            link: '#'
-        },
-        {
-            id: 6,
-            name: 'Damac Hills 1, Calero Cluster ADR',
-            price: 'AED 7,200,000',
-            bedrooms: 5,
-            bathrooms: 4,
-            image: '/assets/img/property.png',
-            link: '#'
-        }
-    ];
+    // This is kept for reference but no longer used since we now get properties from the backend
+    const fallbackProperties = [];
 
     return (
         <div className="property-section py-5" style={{ backgroundColor: '#FFF0DE' }}>
@@ -216,9 +157,36 @@ Website: www.boros.com
                             <h2 style={{ fontFamily: 'Agatho', fontSize: '32px', marginBottom: '0' }}>Featured Properties</h2>
                             <div className="d-flex align-items-center">
                                 <div className="search-sort-filters me-3">
-                                    <button className="btn btn-outline-dark btn-sm me-2">All</button>
-                                    <button className="btn btn-outline-dark btn-sm me-2">Villa</button>
-                                    <button className="btn btn-outline-dark btn-sm">Apartment</button>
+                                    <button
+                                        className={`btn btn-sm me-2 ${activeFilter === 'All' ? 'btn-dark' : 'btn-outline-dark'}`}
+                                        onClick={() => applyFilter('All')}
+                                    >
+                                        All
+                                    </button>
+                                    <button
+                                        className={`btn btn-sm me-2 ${activeFilter === 'Villa' ? 'btn-dark' : 'btn-outline-dark'}`}
+                                        onClick={() => applyFilter('Villa')}
+                                    >
+                                        Villa
+                                    </button>
+                                    <button
+                                        className={`btn btn-sm me-2 ${activeFilter === 'Apartment' ? 'btn-dark' : 'btn-outline-dark'}`}
+                                        onClick={() => applyFilter('Apartment')}
+                                    >
+                                        Apartment
+                                    </button>
+                                    <button
+                                        className={`btn btn-sm me-2 ${activeFilter === 'Townhouse' ? 'btn-dark' : 'btn-outline-dark'}`}
+                                        onClick={() => applyFilter('Townhouse')}
+                                    >
+                                        Townhouse
+                                    </button>
+                                    <button
+                                        className={`btn btn-sm ${activeFilter === 'Penthouse' ? 'btn-dark' : 'btn-outline-dark'}`}
+                                        onClick={() => applyFilter('Penthouse')}
+                                    >
+                                        Penthouse
+                                    </button>
                                 </div>
                                 {!loading && !error && currentProperties.length > 0 && (
                                     <button 
@@ -323,10 +291,10 @@ Website: www.boros.com
                                             </div>
                                             
                                             <div className="d-flex mt-3">
-                                                <Link 
-                                                    href={property.link} 
+                                                <Link
+                                                    href={route('properties.show', property.id)}
                                                     className="btn btn-sm btn-outline-dark me-2"
-                                                    style={{ 
+                                                    style={{
                                                         fontFamily: 'Glancyr',
                                                         flex: 1
                                                     }}

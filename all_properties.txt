@@ -1,0 +1,47 @@
+ALL PROPERTIES FROM XML FEED
+
+Total Properties in Feed: 71
+
+NOTE: The screenshot only shows details for the first property. Below is the complete information for that property.
+
+PROPERTY 1 (of 71):
+------------------
+Reference: AP7086
+Name: Bahar 2
+Community: Jumeirah Beach Residence
+Price: AED 5,999,898.00
+Bedrooms: 3
+Bathrooms: 4
+Built-up Area: 2,990.05 sq ft
+Status: Vacant
+Location: Marina District, Dubai, United Arab Emirates
+Agent: Liam Pelser
+Contact: +971 58 511 7221
+Property ID: 3572
+Marketing Title: Rare Unit | Fully Renovated | Full Sea View
+Last Updated: 5/9/2025 10:31:15 AM
+Listing Date: 3/12/2025 4:13:14 PM
+Coordinates: 55.13935, 25.07969
+
+Description:
+Liam and The Boros Collection (The Luxury Collection Real Estate) are pleased to present this stunning rare JBR loft apartment new onto the market. The property has been newly renovated with modern interiors and furnished to an extremely high standard, boasting fantastic Dubai Eye and sea views, the apartment is bright and spacious throughout and allows you to come through the double-height ceiling and windows. On entering you are greeted with high open plan living and dining area, a fully equipped kitchen, upstairs there is a spacious master bedroom with built-in master bed with built-in wardrobe and En-suite plus a further guest study area. This is a must-view property. Property Details: - 3 Bedrooms - Study Room - Sea and Dubai Eye Views - Fully Furnished - Modern Upgrades - BUA: Approximately 2,990.05 sq. ft. - Extremely Rare on the Market - Open Layout - Vacant for more details and information please contact Liam Pelser at +971 58 511 7221 or email at liam@theboroslcollection.com.
+
+IDs:
+Country ID: 65946
+State ID: 55367
+City ID: 69178
+District ID: 190886
+Community ID: 19924
+Sub Community ID: 199916
+
+Views:
+Primary Unit View: Sea view and Dubai Eye view
+Unit Floor: Not specified
+
+Other Details:
+Parking: R
+Property Type: Apartment
+Document Web: Available
+Brochure Link: https://images.goyzer.com/Pages/UnitCard.aspx?tp5M4MUuyjimiOjaHESRlu65+HbwEMWY1QmJlLhOoRpx3o8PvpOo9UCUv3BbnoKX1kN0FqvEb+T5yWh11V57Yg==
+
+Note: The XML feed contains 71 total properties, but only the first one is fully visible in the screenshot.

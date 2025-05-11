@@ -1,0 +1,80 @@
+ALL PROPERTIES FROM XML FEED
+
+Total Properties in Feed: 21
+
+PROPERTY 1 (of 21):
+------------------
+Reference: AP7806
+Name: Bahar 2
+Community: Jumeirah Beach Residence
+Price: AED 5,399,898.00
+Bedrooms: 3
+Bathrooms: 4
+Built-up Area: 2996.03 sq ft
+Status: Vacant
+Location: Marina District, Dubai, United Arab Emirates
+Marketing Title: Rare Unit | Fully Renovated | Full Sea Views
+
+--------------------------------------------------------------------------------
+
+PROPERTY 2 (of 21):
+------------------
+Reference: AP7775
+Name: Marina Diamond 1
+Community: Dubai Marina
+Price: AED 1,000,000.00
+Bedrooms: 1
+Bathrooms: 2
+Built-up Area: 719.03 sq ft
+Status: Vacant
+Location: Marina District, Dubai, United Arab Emirates
+Marketing Title: Renovated | Tenanted at 90K | Motivated Seller
+
+--------------------------------------------------------------------------------
+
+PROPERTY 3 (of 21):
+------------------
+Reference: TH7824
+Name: Silver Springs 3
+Community: DAMAC Hills
+Price: AED 3,700,000.00
+Bedrooms: 4
+Bathrooms: 3
+Built-up Area: 1938 sq ft
+Status: Vacant
+Location: Dubailand District, Dubai, United Arab Emirates
+Marketing Title: Spacious Townhouse | Private Garden| Investor Deal
+
+--------------------------------------------------------------------------------
+
+PROPERTY 4 (of 21):
+------------------
+Reference: AP7823
+Name: Belmont Residences
+Community: Jumeirah Village Triangle
+Price: AED 2,000,000.00
+Bedrooms: 2
+Bathrooms: 2
+Built-up Area: 1268.63 sq ft
+Status: Vacant
+Location: Dubailand District, Dubai, United Arab Emirates
+Marketing Title: Exclusive | Investor Deal  | Belmont Residences
+
+--------------------------------------------------------------------------------
+
+PROPERTY 5 (of 21):
+------------------
+Reference: AP7784
+Name: Arbor View
+Community: Arjan
+Price: AED 2,200,000.00
+Bedrooms: 2
+Bathrooms: 1
+Built-up Area: 1256 sq ft
+Status: Vacant
+Location: Dubailand District, Dubai, United Arab Emirates
+Marketing Title: Modern Living | investor Deal | Prime Location
+
+--------------------------------------------------------------------------------
+
+... and 16 more properties ...

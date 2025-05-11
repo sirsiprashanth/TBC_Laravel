@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\PropertyApiController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -13,13 +12,9 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/sell', function () {
-    return Inertia::render('Sell');
-})->name('sell');
+Route::get('/sell', [App\Http\Controllers\PropertyController::class, 'sell'])->name('sell');
 
-Route::get('/rent', function () {
-    return Inertia::render('Rent');
-})->name('rent');
+Route::get('/rent', [App\Http\Controllers\PropertyController::class, 'rent'])->name('rent');
 
 Route::get('/off-plan', function () {
     return Inertia::render('OffPlan');
@@ -37,10 +32,14 @@ Route::get('/contact-us', function () {
     return Inertia::render('ContactUs');
 })->name('contact-us');
 
-// Property API routes
-Route::get('/api/properties/sales', [PropertyApiController::class, 'getSalesListings']);
-Route::get('/api/properties/rentals', [PropertyApiController::class, 'getRentalListings']);
-Route::get('/api/properties/test', [PropertyApiController::class, 'getTestProperties']);
+// Property routes
+Route::get('/properties', [App\Http\Controllers\PropertyController::class, 'index'])->name('properties.index');
+Route::get('/properties/{property}', [App\Http\Controllers\PropertyController::class, 'show'])->name('properties.show');
+Route::get('/admin/properties/import', [App\Http\Controllers\PropertyController::class, 'import'])->middleware(['auth'])->name('properties.import');
+Route::get('/api/properties/feed.xml', [App\Http\Controllers\PropertyController::class, 'xmlFeed'])->name('properties.xml-feed');
+Route::get('/api/properties/sales', [App\Http\Controllers\PropertyController::class, 'getSalesApi'])->name('properties.sales-api');
+Route::get('/api/properties/rentals', [App\Http\Controllers\PropertyController::class, 'getRentalsApi'])->name('properties.rentals-api');
+Route::get('/api/properties/test', [App\Http\Controllers\PropertyController::class, 'getTestApi'])->name('properties.test-api');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
