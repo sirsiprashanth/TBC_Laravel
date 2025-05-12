@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { router, useForm } from '@inertiajs/react';
 
-export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
+export default function SellBanner({ filters = {} }) {
     // Form state with Inertia.js useForm
     const { data, setData, get } = useForm({
-        propertyFor: filters.propertyFor || 'Buy',
+        propertyFor: filters.propertyFor || 'buy',
         location: filters.location || '',
         bedrooms: filters.bedrooms || '',
         min_price: filters.min_price || '',
@@ -24,11 +24,8 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
     const propertyTypeRef = useRef(null);
     const propertyForRef = useRef(null);
 
-    // Options for dropdowns from database, with fallbacks to hardcoded values if empty
-    const bedroomsOptions = dropdownOptions && dropdownOptions.bedrooms && dropdownOptions.bedrooms.length > 0
-        ? ['Any', ...dropdownOptions.bedrooms.map(bed => bed.toString())]
-        : ['Any', '1', '2', '3', '4', '5+'];
-        
+    // Options for dropdowns
+    const bedroomsOptions = ['Any', '1', '2', '3', '4', '5+'];
     const priceRangeOptions = [
         { label: 'Any', min: '', max: '' },
         { label: 'Under 1M', min: '0', max: '1000000' },
@@ -37,11 +34,7 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
         { label: '5M - 10M', min: '5000000', max: '10000000' },
         { label: '10M+', min: '10000000', max: '' }
     ];
-    
-    const propertyTypeOptions = dropdownOptions && dropdownOptions.property_types && dropdownOptions.property_types.length > 0
-        ? ['Any', ...dropdownOptions.property_types]
-        : ['Any', 'Apartment', 'Villa', 'Townhouse', 'Penthouse'];
-        
+    const propertyTypeOptions = ['Any', 'Apartment', 'Villa', 'Townhouse', 'Penthouse'];
     const propertyForOptions = ['Buy', 'Rent'];
 
     // Handle outside click to close dropdowns
@@ -113,27 +106,12 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
         return selectedRange ? selectedRange.label : 'Price Range';
     };
 
-    // Dropdown styling for individual items
-    const dropdownItemStyle = {
-        fontFamily: 'Glancyr',
-        padding: '10px 16px',
-        display: 'block',
-        width: '100%',
-        textAlign: 'left',
-        color: '#1f2937',
-        borderBottom: '1px solid rgba(0,0,0,0.1)',
-        fontSize: '16px',
-        cursor: 'pointer',
-        backgroundColor: 'transparent',
-        border: 'none'
-    };
-
     return (
         <div className="position-relative">
             {/* Banner Background Image */}
             <div className="position-relative" style={{
                 height: '80vh',
-                overflow: 'visible', // Allow dropdowns to overflow
+                overflow: 'hidden',
                 backgroundImage: 'url(/assets/img/City_view.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
@@ -174,17 +152,10 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                 </div>
 
                 {/* Search Form - Functional */}
-                <div className="position-absolute" style={{ 
-                    bottom: '2rem', 
-                    left: '50%', 
-                    transform: 'translateX(-50%)', 
-                    width: '80%', 
-                    maxWidth: '1000px', 
-                    zIndex: 100  // Higher z-index
-                }}>
+                <div className="position-absolute" style={{ bottom: '2rem', left: '50%', transform: 'translateX(-50%)', width: '80%', maxWidth: '1000px', zIndex: 3 }}>
                     <div className="bg-white rounded-pill shadow d-flex">
                         {/* Buy/Rent Dropdown */}
-                        <div className="dropdown p-2 flex-grow-1 border-end" style={{ position: 'relative' }} ref={propertyForRef}>
+                        <div className="dropdown p-2 flex-grow-1 border-end" ref={propertyForRef}>
                             <button
                                 className="btn dropdown-toggle w-100 text-start"
                                 type="button"
@@ -195,43 +166,46 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                                     {data.propertyFor || 'Buy'}
                                 </span>
                             </button>
-                            
-                            {/* Buy/Rent Dropdown Options */}
                             {propertyForOpen && (
-                                <div className="position-absolute" style={{ 
-                                    top: '100%', 
-                                    left: 0, 
-                                    minWidth: '150px',
-                                    backgroundColor: '#fff',
-                                    border: '2px solid #f7945f',
-                                    borderRadius: '0.5rem',
-                                    zIndex: 1050,
-                                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                                    marginTop: '5px'
-                                }}>
-                                    <button 
-                                        className="w-100 text-start" 
-                                        style={{
-                                            ...dropdownItemStyle,
-                                            fontWeight: data.propertyFor === 'Buy' ? 'bold' : 'normal',
-                                            backgroundColor: data.propertyFor === 'Buy' ? '#f7945f20' : 'transparent'
-                                        }}
-                                        onClick={() => handlePropertyForSelect('Buy')}
-                                    >
-                                        Buy
-                                    </button>
-                                    <button 
-                                        className="w-100 text-start" 
-                                        style={{
-                                            ...dropdownItemStyle,
-                                            fontWeight: data.propertyFor === 'Rent' ? 'bold' : 'normal',
-                                            backgroundColor: data.propertyFor === 'Rent' ? '#f7945f20' : 'transparent',
-                                            borderBottom: 'none'
-                                        }}
-                                        onClick={() => handlePropertyForSelect('Rent')}
-                                    >
-                                        Rent
-                                    </button>
+                                <div
+                                    className="dropdown-menu show w-100"
+                                    style={{
+                                        display: 'block',
+                                        position: 'absolute',
+                                        inset: '0px auto auto 0px',
+                                        margin: '0px',
+                                        transform: 'translate(0px, 40px)',
+                                        zIndex: 1000,
+                                        backgroundColor: 'rgba(255, 255, 255, 0.98)',
+                                        boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.25)',
+                                        border: '2px solid #f7945f',
+                                        borderRadius: '0.5rem',
+                                        maxHeight: '300px',
+                                        overflowY: 'auto',
+                                        width: '100%',
+                                        padding: '5px 0'
+                                    }}
+                                >
+                                    {propertyForOptions.map(option => (
+                                        <button
+                                            key={option}
+                                            className="dropdown-item"
+                                            onClick={() => handlePropertyForSelect(option)}
+                                            style={{
+                                                fontFamily: 'Glancyr',
+                                                padding: '8px 16px',
+                                                display: 'block',
+                                                width: '100%',
+                                                textAlign: 'left',
+                                                color: '#212529',
+                                                borderBottom: '1px solid rgba(0,0,0,0.05)'
+                                            }}
+                                            onMouseOver={(e) => e.target.style.backgroundColor = '#f7945f40'}
+                                            onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
+                                        >
+                                            {option}
+                                        </button>
+                                    ))}
                                 </div>
                             )}
                         </div>
@@ -256,7 +230,7 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                         </div>
 
                         {/* Bedrooms Dropdown */}
-                        <div className="dropdown p-2 flex-grow-1 border-end" style={{ position: 'relative' }} ref={bedroomsRef}>
+                        <div className="dropdown p-2 flex-grow-1 border-end" ref={bedroomsRef}>
                             <button
                                 className="btn dropdown-toggle w-100 text-start"
                                 type="button"
@@ -267,31 +241,42 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                                     {data.bedrooms || 'Bedrooms'}
                                 </span>
                             </button>
-                            
-                            {/* Bedrooms Dropdown Options */}
                             {bedroomsOpen && (
-                                <div className="position-absolute" style={{ 
-                                    top: '100%', 
-                                    left: 0, 
-                                    minWidth: '150px',
-                                    backgroundColor: '#fff',
-                                    border: '2px solid #f7945f',
-                                    borderRadius: '0.5rem',
-                                    zIndex: 1050,
-                                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                                    marginTop: '5px'
-                                }}>
-                                    {bedroomsOptions.map((option, index) => (
-                                        <button 
+                                <div
+                                    className="dropdown-menu show w-100"
+                                    style={{
+                                        display: 'block',
+                                        position: 'absolute',
+                                        inset: '0px auto auto 0px',
+                                        margin: '0px',
+                                        transform: 'translate(0px, 40px)',
+                                        zIndex: 1000,
+                                        backgroundColor: 'rgba(255, 255, 255, 0.98)',
+                                        boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.25)',
+                                        border: '2px solid #f7945f',
+                                        borderRadius: '0.5rem',
+                                        maxHeight: '300px',
+                                        overflowY: 'auto',
+                                        width: '100%',
+                                        padding: '5px 0'
+                                    }}
+                                >
+                                    {bedroomsOptions.map(option => (
+                                        <button
                                             key={option}
-                                            className="w-100 text-start" 
-                                            style={{
-                                                ...dropdownItemStyle,
-                                                fontWeight: data.bedrooms === option ? 'bold' : 'normal',
-                                                backgroundColor: data.bedrooms === option ? '#f7945f20' : 'transparent',
-                                                borderBottom: index === bedroomsOptions.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.1)'
-                                            }}
+                                            className="dropdown-item"
                                             onClick={() => handleBedroomsSelect(option)}
+                                            style={{
+                                                fontFamily: 'Glancyr',
+                                                padding: '8px 16px',
+                                                display: 'block',
+                                                width: '100%',
+                                                textAlign: 'left',
+                                                color: '#212529',
+                                                borderBottom: '1px solid rgba(0,0,0,0.05)'
+                                            }}
+                                            onMouseOver={(e) => e.target.style.backgroundColor = '#f7945f40'}
+                                            onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
                                         >
                                             {option}
                                         </button>
@@ -301,7 +286,7 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                         </div>
 
                         {/* Price Range Dropdown */}
-                        <div className="dropdown p-2 flex-grow-1 border-end" style={{ position: 'relative' }} ref={priceRangeRef}>
+                        <div className="dropdown p-2 flex-grow-1 border-end" ref={priceRangeRef}>
                             <button
                                 className="btn dropdown-toggle w-100 text-start"
                                 type="button"
@@ -312,31 +297,42 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                                     {(data.min_price || data.max_price) ? getPriceRangeDisplayText() : 'Price Range'}
                                 </span>
                             </button>
-                            
-                            {/* Price Range Dropdown Options */}
                             {priceRangeOpen && (
-                                <div className="position-absolute" style={{ 
-                                    top: '100%', 
-                                    left: 0, 
-                                    minWidth: '150px',
-                                    backgroundColor: '#fff',
-                                    border: '2px solid #f7945f',
-                                    borderRadius: '0.5rem',
-                                    zIndex: 1050,
-                                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                                    marginTop: '5px'
-                                }}>
+                                <div
+                                    className="dropdown-menu show w-100"
+                                    style={{
+                                        display: 'block',
+                                        position: 'absolute',
+                                        inset: '0px auto auto 0px',
+                                        margin: '0px',
+                                        transform: 'translate(0px, 40px)',
+                                        zIndex: 1000,
+                                        backgroundColor: 'rgba(255, 255, 255, 0.98)',
+                                        boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.25)',
+                                        border: '2px solid #f7945f',
+                                        borderRadius: '0.5rem',
+                                        maxHeight: '300px',
+                                        overflowY: 'auto',
+                                        width: '100%',
+                                        padding: '5px 0'
+                                    }}
+                                >
                                     {priceRangeOptions.map((option, index) => (
-                                        <button 
+                                        <button
                                             key={index}
-                                            className="w-100 text-start" 
-                                            style={{
-                                                ...dropdownItemStyle,
-                                                fontWeight: getPriceRangeDisplayText() === option.label ? 'bold' : 'normal',
-                                                backgroundColor: getPriceRangeDisplayText() === option.label ? '#f7945f20' : 'transparent',
-                                                borderBottom: index === priceRangeOptions.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.1)'
-                                            }}
+                                            className="dropdown-item"
                                             onClick={() => handlePriceRangeSelect(option)}
+                                            style={{
+                                                fontFamily: 'Glancyr',
+                                                padding: '8px 16px',
+                                                display: 'block',
+                                                width: '100%',
+                                                textAlign: 'left',
+                                                color: '#212529',
+                                                borderBottom: '1px solid rgba(0,0,0,0.05)'
+                                            }}
+                                            onMouseOver={(e) => e.target.style.backgroundColor = '#f7945f40'}
+                                            onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
                                         >
                                             {option.label}
                                         </button>
@@ -346,7 +342,7 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                         </div>
 
                         {/* Property Types Dropdown */}
-                        <div className="dropdown p-2 flex-grow-1" style={{ position: 'relative' }} ref={propertyTypeRef}>
+                        <div className="dropdown p-2 flex-grow-1" ref={propertyTypeRef}>
                             <button
                                 className="btn dropdown-toggle w-100 text-start"
                                 type="button"
@@ -357,31 +353,42 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                                     {data.property_type || 'All Types'}
                                 </span>
                             </button>
-                            
-                            {/* Property Types Dropdown Options */}
                             {propertyTypeOpen && (
-                                <div className="position-absolute" style={{ 
-                                    top: '100%', 
-                                    right: 0, 
-                                    minWidth: '150px',
-                                    backgroundColor: '#fff',
-                                    border: '2px solid #f7945f',
-                                    borderRadius: '0.5rem',
-                                    zIndex: 1050,
-                                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                                    marginTop: '5px'
-                                }}>
-                                    {propertyTypeOptions.map((option, index) => (
-                                        <button 
+                                <div
+                                    className="dropdown-menu show w-100"
+                                    style={{
+                                        display: 'block',
+                                        position: 'absolute',
+                                        inset: '0px auto auto 0px',
+                                        margin: '0px',
+                                        transform: 'translate(0px, 40px)',
+                                        zIndex: 1000,
+                                        backgroundColor: 'rgba(255, 255, 255, 0.98)',
+                                        boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.25)',
+                                        border: '2px solid #f7945f',
+                                        borderRadius: '0.5rem',
+                                        maxHeight: '300px',
+                                        overflowY: 'auto',
+                                        width: '100%',
+                                        padding: '5px 0'
+                                    }}
+                                >
+                                    {propertyTypeOptions.map(option => (
+                                        <button
                                             key={option}
-                                            className="w-100 text-start" 
-                                            style={{
-                                                ...dropdownItemStyle,
-                                                fontWeight: data.property_type === option ? 'bold' : 'normal',
-                                                backgroundColor: data.property_type === option ? '#f7945f20' : 'transparent',
-                                                borderBottom: index === propertyTypeOptions.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.1)'
-                                            }}
+                                            className="dropdown-item"
                                             onClick={() => handlePropertyTypeSelect(option)}
+                                            style={{
+                                                fontFamily: 'Glancyr',
+                                                padding: '8px 16px',
+                                                display: 'block',
+                                                width: '100%',
+                                                textAlign: 'left',
+                                                color: '#212529',
+                                                borderBottom: '1px solid rgba(0,0,0,0.05)'
+                                            }}
+                                            onMouseOver={(e) => e.target.style.backgroundColor = '#f7945f40'}
+                                            onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
                                         >
                                             {option}
                                         </button>

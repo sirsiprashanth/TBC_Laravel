@@ -261,12 +261,13 @@ class PropertyController extends Controller
     /**
      * Display properties for sale on the Sell page.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Inertia\Response
      */
-    public function sell()
+    public function sell(Request $request)
     {
-        // Get all properties from the database that are for sale (not rental) and active
-        $properties = Property::where(function($query) {
+        // Start query with base filters
+        $query = Property::where(function($query) {
                 $query->where('property_type', 'Apartment')
                     ->orWhere('property_type', 'Villa')
                     ->orWhere('property_type', 'Townhouse')
@@ -276,8 +277,44 @@ class PropertyController extends Controller
             ->where(function($query) {
                 $query->where('is_rental', false)
                       ->orWhereNull('is_rental'); // For backwards compatibility with older data
-            })
-            ->latest()
+            });
+
+        // Apply location filter if provided
+        if ($request->filled('location')) {
+            $location = $request->location;
+            $query->where(function($query) use ($location) {
+                $query->where('community', 'like', "%{$location}%")
+                      ->orWhere('district', 'like', "%{$location}%")
+                      ->orWhere('city', 'like', "%{$location}%")
+                      ->orWhere('country', 'like', "%{$location}%");
+            });
+        }
+
+        // Apply bedrooms filter if provided
+        if ($request->filled('bedrooms') && $request->bedrooms !== 'Any') {
+            if ($request->bedrooms === '5+') {
+                $query->where('bedrooms', '>=', 5);
+            } else {
+                $query->where('bedrooms', $request->bedrooms);
+            }
+        }
+
+        // Apply price range filter if provided
+        if ($request->filled('min_price')) {
+            $query->where('price', '>=', $request->min_price);
+        }
+
+        if ($request->filled('max_price')) {
+            $query->where('price', '<=', $request->max_price);
+        }
+
+        // Apply property type filter if provided
+        if ($request->filled('property_type') && $request->property_type !== 'Any') {
+            $query->where('property_type', $request->property_type);
+        }
+
+        // Get the filtered properties
+        $properties = $query->latest()
             ->get()
             ->map(function ($property) {
                 return [
@@ -298,30 +335,117 @@ class PropertyController extends Controller
                 ];
             });
 
-        // Return the Sell view with properties data
+        // Collect all filter parameters to pass back to the view
+        $filters = $request->only([
+            'location',
+            'bedrooms',
+            'min_price',
+            'max_price',
+            'property_type'
+        ]);
+
+        // Add property type for filter display
+        $filters['propertyFor'] = 'Buy';
+
+        // Get dropdown options from database
+        $propertyTypes = Property::where('is_active', true)
+            ->where(function($query) {
+                $query->where('is_rental', false)
+                      ->orWhereNull('is_rental');
+            })
+            ->distinct('property_type')
+            ->pluck('property_type')
+            ->filter()
+            ->values();
+
+        $bedroomOptions = Property::where('is_active', true)
+            ->where(function($query) {
+                $query->where('is_rental', false)
+                      ->orWhereNull('is_rental');
+            })
+            ->distinct('bedrooms')
+            ->pluck('bedrooms')
+            ->sort()
+            ->filter()
+            ->values();
+
+        $communities = Property::where('is_active', true)
+            ->where(function($query) {
+                $query->where('is_rental', false)
+                      ->orWhereNull('is_rental');
+            })
+            ->distinct('community')
+            ->pluck('community')
+            ->filter()
+            ->values();
+
+        // Return the Sell view with properties data, filters and dropdown options
         return Inertia::render('Sell', [
             'properties' => $properties,
-            'count' => count($properties)
+            'count' => count($properties),
+            'filters' => $filters,
+            'dropdown_options' => [
+                'property_types' => $propertyTypes,
+                'bedrooms' => $bedroomOptions,
+                'communities' => $communities
+            ]
         ]);
     }
 
     /**
      * Display properties for rent on the Rent page.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Inertia\Response
      */
-    public function rent()
+    public function rent(Request $request)
     {
-        // Get all properties from the database that are for rent and active
-        $properties = Property::where(function($query) {
+        // Start query with base filters
+        $query = Property::where(function($query) {
                 $query->where('property_type', 'Apartment')
                     ->orWhere('property_type', 'Villa')
                     ->orWhere('property_type', 'Townhouse')
                     ->orWhere('property_type', 'Penthouse');
             })
             ->where('is_active', true)
-            ->where('is_rental', true)
-            ->latest()
+            ->where('is_rental', true);
+
+        // Apply location filter if provided
+        if ($request->filled('location')) {
+            $location = $request->location;
+            $query->where(function($query) use ($location) {
+                $query->where('community', 'like', "%{$location}%")
+                      ->orWhere('district', 'like', "%{$location}%")
+                      ->orWhere('city', 'like', "%{$location}%")
+                      ->orWhere('country', 'like', "%{$location}%");
+            });
+        }
+
+        // Apply bedrooms filter if provided
+        if ($request->filled('bedrooms') && $request->bedrooms !== 'Any') {
+            if ($request->bedrooms === '5+') {
+                $query->where('bedrooms', '>=', 5);
+            } else {
+                $query->where('bedrooms', $request->bedrooms);
+            }
+        }
+
+        // Apply price range filter if provided
+        if ($request->filled('min_price')) {
+            $query->where('price', '>=', $request->min_price);
+        }
+
+        if ($request->filled('max_price')) {
+            $query->where('price', '<=', $request->max_price);
+        }
+
+        // Apply property type filter if provided
+        if ($request->filled('property_type') && $request->property_type !== 'Any') {
+            $query->where('property_type', $request->property_type);
+        }
+
+        // Get the filtered properties
+        $properties = $query->latest()
             ->get()
             ->map(function ($property) {
                 // Calculate monthly price from yearly
@@ -347,10 +471,51 @@ class PropertyController extends Controller
                 ];
             });
 
-        // Return the Rent view with properties data
+        // Collect all filter parameters to pass back to the view
+        $filters = $request->only([
+            'location',
+            'bedrooms',
+            'min_price',
+            'max_price',
+            'property_type'
+        ]);
+
+        // Add property type for filter display
+        $filters['propertyFor'] = 'Rent';
+
+        // Get dropdown options from database
+        $propertyTypes = Property::where('is_active', true)
+            ->where('is_rental', true)
+            ->distinct('property_type')
+            ->pluck('property_type')
+            ->filter()
+            ->values();
+
+        $bedroomOptions = Property::where('is_active', true)
+            ->where('is_rental', true)
+            ->distinct('bedrooms')
+            ->pluck('bedrooms')
+            ->sort()
+            ->filter()
+            ->values();
+
+        $communities = Property::where('is_active', true)
+            ->where('is_rental', true)
+            ->distinct('community')
+            ->pluck('community')
+            ->filter()
+            ->values();
+
+        // Return the Rent view with properties data, filters and dropdown options
         return Inertia::render('Rent', [
             'properties' => $properties,
-            'count' => count($properties)
+            'count' => count($properties),
+            'filters' => $filters,
+            'dropdown_options' => [
+                'property_types' => $propertyTypes,
+                'bedrooms' => $bedroomOptions,
+                'communities' => $communities
+            ]
         ]);
     }
 

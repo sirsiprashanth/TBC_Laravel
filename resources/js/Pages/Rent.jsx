@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Head } from '@inertiajs/react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import RentBanner from '../Components/RentBanner';
+import SellBanner from '../Components/SellBanner'; // Using SellBanner for consistent filtering
 import RentalPropertyCard from '../Components/RentalPropertyCard';
 import LogoBanner from '../Components/LogoBanner';
 import TestimonialVideos from '../Components/TestimonialVideos';
 
-export default function Rent({ auth, properties = [], count = 0 }) {
+export default function Rent({ auth, properties = [], count = 0, filters = {}, dropdown_options = {} }) {
     // State for filtered properties
     const [filteredProperties, setFilteredProperties] = useState(properties);
     const [activeFilter, setActiveFilter] = useState('All');
@@ -52,7 +52,7 @@ export default function Rent({ auth, properties = [], count = 0 }) {
             <Head title="Rent Properties" />
             <div style={{borderColor: 'var(--bs-indigo)', background: 'rgb(255,241,222)'}}>
                 <Navbar />
-                <RentBanner />
+                <SellBanner filters={filters} dropdownOptions={dropdown_options} />
 
                 {/* Property listings section */}
                 <div className="property-section py-5" style={{ backgroundColor: '#FFF0DE' }}>
