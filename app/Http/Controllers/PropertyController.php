@@ -581,4 +581,291 @@ class PropertyController extends Controller
             return $response;
         }
     }
+    
+    /**
+     * Get sales properties as JSON API response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getSalesApi(Request $request)
+    {
+        try {
+            // Build query for sale properties
+            $query = Property::where(function($query) {
+                    $query->where('is_rental', false)
+                          ->orWhereNull('is_rental'); // For backwards compatibility with older data
+                })
+                ->where('is_active', true);
+
+            // Apply optional filters if provided in the request
+            if ($request->filled('property_type')) {
+                $query->where('property_type', $request->property_type);
+            }
+
+            if ($request->filled('bedrooms')) {
+                if ($request->bedrooms === '5+') {
+                    $query->where('bedrooms', '>=', 5);
+                } else {
+                    $query->where('bedrooms', $request->bedrooms);
+                }
+            }
+
+            if ($request->filled('min_price')) {
+                $query->where('price', '>=', $request->min_price);
+            }
+
+            if ($request->filled('max_price')) {
+                $query->where('price', '<=', $request->max_price);
+            }
+
+            if ($request->filled('location')) {
+                $location = $request->location;
+                $query->where(function($query) use ($location) {
+                    $query->where('community', 'like', "%{$location}%")
+                          ->orWhere('district', 'like', "%{$location}%")
+                          ->orWhere('city', 'like', "%{$location}%")
+                          ->orWhere('country', 'like', "%{$location}%");
+                });
+            }
+
+            // Determine pagination parameters
+            $perPage = $request->input('per_page', 20); // Default 20 items per page
+            $page = $request->input('page', 1);         // Default to page 1
+
+            // Get the paginated properties
+            $properties = $query->latest()
+                ->paginate($perPage, ['*'], 'page', $page);
+
+            // Transform properties for API response
+            $transformedProperties = $properties->map(function ($property) {
+                return [
+                    'id' => $property->id,
+                    'reference_number' => $property->reference_number,
+                    'property_name' => $property->property_name,
+                    'community' => $property->community,
+                    'sub_community' => $property->sub_community,
+                    'price' => $property->price,
+                    'formatted_price' => $property->formatted_price,
+                    'currency' => $property->currency ?? 'AED',
+                    'bedrooms' => $property->bedrooms,
+                    'bathrooms' => $property->bathrooms,
+                    'built_up_area' => $property->built_up_area,
+                    'property_type' => $property->property_type,
+                    'status' => $property->status,
+                    'location' => $property->full_location,
+                    'description' => $property->description,
+                    'agent_name' => $property->agent_name,
+                    'images' => $property->images,
+                    'main_image' => ($property->images && is_array($property->images) && count($property->images) > 0)
+                        ? $property->images[0]
+                        : null,
+                    'latitude' => $property->latitude,
+                    'longitude' => $property->longitude,
+                    'amenities' => $property->amenities,
+                    'url' => route('properties.show', $property->id)
+                ];
+            });
+
+            // Prepare pagination metadata
+            $meta = [
+                'current_page' => $properties->currentPage(),
+                'per_page' => $properties->perPage(),
+                'from' => $properties->firstItem(),
+                'to' => $properties->lastItem(),
+                'total' => $properties->total(),
+                'last_page' => $properties->lastPage()
+            ];
+
+            // Return JSON response
+            return response()->json([
+                'data' => $transformedProperties,
+                'meta' => $meta,
+                'filters' => $request->only(['property_type', 'bedrooms', 'min_price', 'max_price', 'location']),
+                'success' => true
+            ]);
+
+        } catch (\Exception $e) {
+            // Log the exception
+            Log::error('Exception in getSalesApi: ' . $e->getMessage());
+            Log::error($e->getTraceAsString());
+            
+            // Return error response
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to retrieve sales properties: ' . $e->getMessage()
+            ], 500);
+        }
+    }
+
+    /**
+     * Get rental properties as JSON API response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getRentalsApi(Request $request)
+    {
+        try {
+            // Build query for rental properties
+            $query = Property::where('is_rental', true)
+                ->where('is_active', true);
+
+            // Apply optional filters if provided in the request
+            if ($request->filled('property_type')) {
+                $query->where('property_type', $request->property_type);
+            }
+
+            if ($request->filled('bedrooms')) {
+                if ($request->bedrooms === '5+') {
+                    $query->where('bedrooms', '>=', 5);
+                } else {
+                    $query->where('bedrooms', $request->bedrooms);
+                }
+            }
+
+            if ($request->filled('min_price')) {
+                $query->where('price', '>=', $request->min_price);
+            }
+
+            if ($request->filled('max_price')) {
+                $query->where('price', '<=', $request->max_price);
+            }
+
+            if ($request->filled('location')) {
+                $location = $request->location;
+                $query->where(function($query) use ($location) {
+                    $query->where('community', 'like', "%{$location}%")
+                          ->orWhere('district', 'like', "%{$location}%")
+                          ->orWhere('city', 'like', "%{$location}%")
+                          ->orWhere('country', 'like', "%{$location}%");
+                });
+            }
+
+            // Determine pagination parameters
+            $perPage = $request->input('per_page', 20); // Default 20 items per page
+            $page = $request->input('page', 1);         // Default to page 1
+
+            // Get the paginated properties
+            $properties = $query->latest()
+                ->paginate($perPage, ['*'], 'page', $page);
+
+            // Transform properties for API response
+            $transformedProperties = $properties->map(function ($property) {
+                // Calculate monthly price from yearly
+                $monthlyPrice = $property->price ? $property->price / 12 : null;
+                $formattedMonthlyPrice = $monthlyPrice ? (($property->currency ?? 'AED') . ' ' . number_format($monthlyPrice, 0) . '/month') : null;
+
+                return [
+                    'id' => $property->id,
+                    'reference_number' => $property->reference_number,
+                    'property_name' => $property->property_name,
+                    'community' => $property->community,
+                    'sub_community' => $property->sub_community,
+                    'price_yearly' => $property->price,
+                    'price_monthly' => $monthlyPrice,
+                    'formatted_price' => $property->formatted_price,
+                    'formatted_monthly_price' => $formattedMonthlyPrice,
+                    'currency' => $property->currency ?? 'AED',
+                    'bedrooms' => $property->bedrooms,
+                    'bathrooms' => $property->bathrooms,
+                    'built_up_area' => $property->built_up_area,
+                    'property_type' => $property->property_type,
+                    'status' => $property->status,
+                    'location' => $property->full_location,
+                    'description' => $property->description,
+                    'agent_name' => $property->agent_name,
+                    'images' => $property->images,
+                    'main_image' => ($property->images && is_array($property->images) && count($property->images) > 0)
+                        ? $property->images[0]
+                        : null,
+                    'latitude' => $property->latitude,
+                    'longitude' => $property->longitude,
+                    'amenities' => $property->amenities,
+                    'url' => route('properties.show', $property->id)
+                ];
+            });
+
+            // Prepare pagination metadata
+            $meta = [
+                'current_page' => $properties->currentPage(),
+                'per_page' => $properties->perPage(),
+                'from' => $properties->firstItem(),
+                'to' => $properties->lastItem(),
+                'total' => $properties->total(),
+                'last_page' => $properties->lastPage()
+            ];
+
+            // Return JSON response
+            return response()->json([
+                'data' => $transformedProperties,
+                'meta' => $meta,
+                'filters' => $request->only(['property_type', 'bedrooms', 'min_price', 'max_price', 'location']),
+                'success' => true
+            ]);
+
+        } catch (\Exception $e) {
+            // Log the exception
+            Log::error('Exception in getRentalsApi: ' . $e->getMessage());
+            Log::error($e->getTraceAsString());
+            
+            // Return error response
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to retrieve rental properties: ' . $e->getMessage()
+            ], 500);
+        }
+    }
+    
+    /**
+     * Test API endpoint for development purposes.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getTestApi(Request $request)
+    {
+        try {
+            // Get basic stats about properties in the database
+            $stats = [
+                'total_properties' => Property::count(),
+                'sale_properties' => Property::where(function($query) {
+                        $query->where('is_rental', false)
+                              ->orWhereNull('is_rental');
+                    })->count(),
+                'rental_properties' => Property::where('is_rental', true)->count(),
+                'active_properties' => Property::where('is_active', true)->count(),
+                'property_types' => Property::distinct('property_type')->pluck('property_type')->filter()->values(),
+                'communities' => Property::distinct('community')->pluck('community')->filter()->values()->take(20),
+                'min_price' => Property::min('price'),
+                'max_price' => Property::max('price'),
+                'min_bedrooms' => Property::min('bedrooms'),
+                'max_bedrooms' => Property::max('bedrooms')
+            ];
+
+            // Return JSON response with system info and property stats
+            return response()->json([
+                'success' => true,
+                'message' => 'API is functioning correctly',
+                'system_info' => [
+                    'php_version' => phpversion(),
+                    'laravel_version' => app()->version(),
+                    'environment' => app()->environment(),
+                    'server_time' => now()->toDateTimeString(),
+                ],
+                'property_stats' => $stats
+            ]);
+
+        } catch (\Exception $e) {
+            // Log the exception
+            Log::error('Exception in getTestApi: ' . $e->getMessage());
+            Log::error($e->getTraceAsString());
+            
+            // Return error response
+            return response()->json([
+                'success' => false,
+                'message' => 'API test failed: ' . $e->getMessage()
+            ], 500);
+        }
+    }
 }

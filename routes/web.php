@@ -35,7 +35,20 @@ Route::get('/contact-us', function () {
 // Property routes
 Route::get('/properties', [App\Http\Controllers\PropertyController::class, 'index'])->name('properties.index');
 Route::get('/properties/{property}', [App\Http\Controllers\PropertyController::class, 'show'])->name('properties.show');
-Route::get('/admin/properties/import', [App\Http\Controllers\PropertyController::class, 'import'])->middleware(['auth'])->name('properties.import');
+// Admin routes
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+    // Import properties (must be before resource routes to prevent conflicts)
+    Route::get('/properties/import', function() {
+        return Inertia::render('Admin/Properties/Import');
+    })->name('properties.import');
+    
+    // Property management
+    Route::resource('properties', App\Http\Controllers\Admin\PropertyController::class);
+    
+    // Additional property actions
+    Route::put('/properties/{property}/toggle-active', [App\Http\Controllers\Admin\PropertyController::class, 'toggleActive'])->name('properties.toggle-active');
+    Route::put('/properties/{property}/toggle-featured', [App\Http\Controllers\Admin\PropertyController::class, 'toggleFeatured'])->name('properties.toggle-featured');
+});
 Route::get('/api/properties/feed.xml', [App\Http\Controllers\PropertyController::class, 'xmlFeed'])->name('properties.xml-feed');
 Route::get('/api/properties/sales', [App\Http\Controllers\PropertyController::class, 'getSalesApi'])->name('properties.sales-api');
 Route::get('/api/properties/rentals', [App\Http\Controllers\PropertyController::class, 'getRentalsApi'])->name('properties.rentals-api');

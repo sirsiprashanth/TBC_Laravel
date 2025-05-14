@@ -1,10 +1,11 @@
 import { Link, usePage } from '@inertiajs/react';
 
 export default function Navbar() {
-    const { url } = usePage();
+    const { url, auth } = usePage().props;
     
     // Function to check if a link is active
     const isActive = (path) => {
+        if (!url) return false; // Safety check for undefined url
         if (path === '/' && url === '/') return true;
         if (path !== '/' && url.startsWith(path)) return true;
         return false;
@@ -140,7 +141,7 @@ export default function Navbar() {
                         </li>
                     </ul>
                     <Link 
-                        className="btn" 
+                        className="btn me-2" 
                         role="button" 
                         href="/contact-us"
                         style={{
@@ -150,6 +151,44 @@ export default function Navbar() {
                     >
                         Contact Us
                     </Link>
+                    
+                    {auth.user ? (
+                        <Link 
+                            className="btn" 
+                            role="button" 
+                            href="/dashboard"
+                            style={{
+                                fontFamily: 'Glancyr',
+                                fontSize: '16px',
+                                fontWeight: '500',
+                                backgroundColor: '#F97316',
+                                color: 'white',
+                                borderRadius: '25px',
+                                padding: '8px 24px',
+                                border: 'none'
+                            }}
+                        >
+                            Dashboard
+                        </Link>
+                    ) : (
+                        <Link 
+                            className="btn" 
+                            role="button" 
+                            href="/login"
+                            style={{
+                                fontFamily: 'Glancyr',
+                                fontSize: '16px',
+                                fontWeight: '500',
+                                backgroundColor: '#F97316',
+                                color: 'white',
+                                borderRadius: '25px',
+                                padding: '8px 24px',
+                                border: 'none'
+                            }}
+                        >
+                            Login
+                        </Link>
+                    )}
                 </div>
             </div>
         </nav>
