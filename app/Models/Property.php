@@ -222,4 +222,28 @@ class Property extends Model
     {
         return $query->where('is_rental', false);
     }
+
+    /**
+     * Get the inquiries for the property.
+     */
+    public function inquiries()
+    {
+        return $this->hasMany(PropertyInquiry::class);
+    }
+
+    /**
+     * Get the viewing requests for the property.
+     */
+    public function viewings()
+    {
+        return $this->hasMany(PropertyInquiry::class)->where('type', 'viewing');
+    }
+
+    /**
+     * Get the contact requests for the property.
+     */
+    public function contacts()
+    {
+        return $this->hasMany(PropertyInquiry::class)->where('type', 'contact');
+    }
 }

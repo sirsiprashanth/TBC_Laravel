@@ -2,7 +2,340 @@
 <ArrayOfUnitDTO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>1/48</Count>
+    <Count>1/49</Count>
+    <Category>Apartment</Category>
+    <code>7825</code>
+    <Status>Vacant</Status>
+    <RefNo>AP7825</RefNo>
+    <Community>Jumeirah Beach Residence</Community>
+    <PropertyName>La Vie</PropertyName>
+    <BuiltupArea>1410.83</BuiltupArea>
+    <PlotArea />
+    <Bedrooms>2</Bedrooms>
+    <PrimaryUnitView />
+    <PrimaryUnitViewId />
+    <SecondaryUnitView />
+    <SecondaryUnitViewId />
+    <UnitModel />
+    <FloorNo />
+    <HandoverDate>5/11/2023 5:05:36 PM</HandoverDate>
+    <Agent>Liam Pelser</Agent>
+    <ContactNumber>971585117221</ContactNumber>
+    <Remarks>&lt;![CDATA[The Luxury Collection-The Boros Collection is pleased to bring this HIGH END apartment to market in La Vie JBR. The apartment consists of 2 bedrooms with En-suited washrooms, an extensive living area, huge balcony overlooking Palm Jumeirah, Dubai Eye, and panoramic sea view. 
+
+Property Details:
+
+- 2 Bedrooms 
+- Balcony 
+- 3 bathrooms 
+- Vacant 
+- One Parking 
+- Furnished
+- Private Beach Access 
+- Infinity Pool 
+- Kids pool and play area 
+- Sauna , Indoor and outdoor Gym 
+- Volleyball sand court 
+- Barbecue Area. 
+- Open layout Overview: 
+
+Discover the epitome of luxury living at this stunning apartment in La Vie, Jumeirah Beach Residence. With sweeping views of Palm Jumeirah, Dubai Eye and the ocean. This meticulously designed residence offers the perfect blend
+of comfort, sophistication, and style. Every detail has been carefully curated, from the high-end finishes to the expansive living spaces, creating a home that is as breathtaking as it is functional. Inspired by Miami modernist architecture, La Vie features delightful aesthetic elements. Please contact me for viewing or any questions. Do not miss out on this spectacular apartment!]]&gt;</Remarks>
+    <CountryName>United Arab Emirates</CountryName>
+    <StateName>Dubai</StateName>
+    <CityName>Dubai</CityName>
+    <DistrictName>Marina District</DistrictName>
+    <MarketingUsp />
+    <FinancingCompany />
+    <Parking>0</Parking>
+    <SubType />
+    <Rent>300000.0000</Rent>
+    <SubCommunity>La Vie</SubCommunity>
+    <PropertyOverview />
+    <LocalAreaAmenitiesDesc />
+    <NoOfBathrooms>3</NoOfBathrooms>
+    <RetUnitCategory>2</RetUnitCategory>
+    <PDFBrochureLink>https://images.goyzer.com/Pages/UnitCard.aspx?UQvYQxPAJv8rP+nxlexT9fgO+j0JWqpyCv7tVyALmEjE1L1smCW2zifwY4pTtO1i0p5iJn22MX2fIAc8pj3l0w==</PDFBrochureLink>
+    <AgentID>1194</AgentID>
+    <PropertyID>3557</PropertyID>
+    <PropertyOwnershipDesc />
+    <CountryID>65946</CountryID>
+    <StateID>55367</StateID>
+    <CityID>54788</CityID>
+    <DistrictID>159896</DistrictID>
+    <CommunityID>199245</CommunityID>
+    <SubCommunityID>199920</SubCommunityID>
+    <AgentReraNo />
+    <ProGooglecoordinates>-77.5377,40.1149</ProGooglecoordinates>
+    <BdmPkg />
+    <SalesmanEmail>liam@theluxurycollectiondxb.com</SalesmanEmail>
+    <LastUpdated>5/16/2025 5:24:06 PM</LastUpdated>
+    <ListingDate>5/16/2025 4:45:54 PM</ListingDate>
+    <ExpiryDate />
+    <RecommendedProperties>no</RecommendedProperties>
+    <MarketingTitle>Furnished | Full Sea View | Available Now</MarketingTitle>
+    <MarketingOptions>Newspaper AD 1-No|Newspaper AD 2-No|Newspaper AD 3-No|Recommended Properties-No</MarketingOptions>
+    <AgentPhoto>https://images.goyzer.com/uf/5082/User/1194/Profile_5.jpg</AgentPhoto>
+    <ArabicTitle />
+    <ArabicDescription />
+    <Mandate>Non Exclusive</Mandate>
+    <CurrencyAbr>AED</CurrencyAbr>
+    <AreaMeasurement>Sq.Ft.</AreaMeasurement>
+    <RentPerMonth>25000.0000</RentPerMonth>
+    <ReraStrNo>RERAStr-|TransactionNo-|PermitNo-71289423482</ReraStrNo>
+    <Furnish_status>Furnished</Furnish_status>
+    <Images>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>Yes</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/5.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/10.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/12.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/11.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/7.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/8.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/9.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/2.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/1.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/3.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/4.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7825/6.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+    </Images>
+    <FittingFixtures>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>524</ID>
+        <Name>Available Networked</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>498</ID>
+        <Name>Balcony</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>522</ID>
+        <Name>Barbecue Are</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>499</ID>
+        <Name>Built-in Kitchen Appliances</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>501</ID>
+        <Name>Built-in Wardrobes</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>497</ID>
+        <Name>CentralA/C &amp; Heating</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>521</ID>
+        <Name>Children's PlayArea</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>520</ID>
+        <Name>Children's Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>503</ID>
+        <Name>Concierge Service</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>523</ID>
+        <Name>Conference Room</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>502</ID>
+        <Name>Covered Parking</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>525</ID>
+        <Name>Dining in building</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>504</ID>
+        <Name>Lobby in Building</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>506</ID>
+        <Name>Maid Service</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>505</ID>
+        <Name>Maid's Room</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>532</ID>
+        <Name>Mezzanine</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>531</ID>
+        <Name>Pantry</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>507</ID>
+        <Name>Pets Allowed</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>508</ID>
+        <Name>Private Garden</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>511</ID>
+        <Name>Private Gym</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>509</ID>
+        <Name>Private Jacuzzi</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>510</ID>
+        <Name>Private Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>513</ID>
+        <Name>Security</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>517</ID>
+        <Name>Shared Gym</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>514</ID>
+        <Name>Shared Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>515</ID>
+        <Name>Shared Spa</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>516</ID>
+        <Name>Study</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>512</ID>
+        <Name>Vastu-compliant</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>500</ID>
+        <Name>View of Landmark</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>518</ID>
+        <Name>View of Water</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>519</ID>
+        <Name>Walk-in Closet</Name>
+      </FittingFixture>
+    </FittingFixtures>
+    <Documents />
+    <OfferingType>RR</OfferingType>
+    <CustomFields />
+    <PriceOnApplication>No</PriceOnApplication>
+    <PermitNumber>71289423482</PermitNumber>
+  </UnitDTO>
+  <UnitDTO>
+    <PageIndex>1/1</PageIndex>
+    <Count>2/49</Count>
     <Category>Townhouse</Category>
     <code>7822</code>
     <Status>Vacant</Status>
@@ -285,7 +618,7 @@ For a private viewing or more details, please contact The Luxury Collection Real
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>2/48</Count>
+    <Count>3/49</Count>
     <Category>Apartment</Category>
     <code>7814</code>
     <Status>Vacant</Status>
@@ -602,7 +935,7 @@ A secure and friendly community, Jumeirah Beach Residence is having all commerci
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>3/48</Count>
+    <Count>4/49</Count>
     <Category>Apartment</Category>
     <code>7813</code>
     <Status>Vacant</Status>
@@ -997,7 +1330,7 @@ Located in this premier destination is Murjan 4 which offers luxury apartments w
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>4/48</Count>
+    <Count>5/49</Count>
     <Category>Townhouse</Category>
     <code>7811</code>
     <Status>Vacant</Status>
@@ -1231,7 +1564,7 @@ To schedule a viewing or for further details, please contact The Luxury Collecti
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>5/48</Count>
+    <Count>6/49</Count>
     <Category>Townhouse</Category>
     <code>7810</code>
     <Status>Vacant</Status>
@@ -1508,7 +1841,7 @@ DAMAC Hills redefines modern living with lush landscapes, world-class facilities
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>6/48</Count>
+    <Count>7/49</Count>
     <Category>Townhouse</Category>
     <code>7808</code>
     <Status>Vacant</Status>
@@ -1804,7 +2137,7 @@ Contact Adriano  or The Luxury Collection Real Estate today to schedule a viewin
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>7/48</Count>
+    <Count>8/49</Count>
     <Category>Apartment</Category>
     <code>7805</code>
     <Status>Blocked</Status>
@@ -1975,7 +2308,7 @@ Experience the finest in modern living surrounded by iconic landmarks, dining, a
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>8/48</Count>
+    <Count>9/49</Count>
     <Category>Townhouse</Category>
     <code>7801</code>
     <Status>Vacant</Status>
@@ -2215,7 +2548,7 @@ For more details or to schedule a viewing, please contact Karla or The Luxury Co
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>9/48</Count>
+    <Count>10/49</Count>
     <Category>Villa</Category>
     <code>7799</code>
     <Status>Vacant</Status>
@@ -2608,7 +2941,7 @@ Contact The Luxury Collection Real Estate for more details or to schedule a view
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>10/48</Count>
+    <Count>11/49</Count>
     <Category>Apartment</Category>
     <code>7795</code>
     <Status>Vacant</Status>
@@ -2973,7 +3306,7 @@ Amwaj in JBR is located in the JBR community, it has direct access to the JBR Wa
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>11/48</Count>
+    <Count>12/49</Count>
     <Category>Villa</Category>
     <code>7781</code>
     <Status>Vacant</Status>
@@ -3264,7 +3597,7 @@ Contact The Luxury Collection Real Estate today to schedule a viewing and experi
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>12/48</Count>
+    <Count>13/49</Count>
     <Category>Villa</Category>
     <code>7780</code>
     <Status>Vacant</Status>
@@ -3592,7 +3925,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino at [97
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>13/48</Count>
+    <Count>14/49</Count>
     <Category>Townhouse</Category>
     <code>7773</code>
     <Status>Blocked</Status>
@@ -3860,7 +4193,7 @@ Please contact us for more details and information.]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>14/48</Count>
+    <Count>15/49</Count>
     <Category>Villa</Category>
     <code>7772</code>
     <Status>Vacant</Status>
@@ -4282,7 +4615,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino at [97
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>15/48</Count>
+    <Count>16/49</Count>
     <Category>Villa</Category>
     <code>7771</code>
     <Status>Vacant</Status>
@@ -4656,7 +4989,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino at [97
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>16/48</Count>
+    <Count>17/49</Count>
     <Category>Apartment</Category>
     <code>7749</code>
     <Status>Blocked</Status>
@@ -4975,7 +5308,7 @@ For further details or to arrange a viewing, please contact Terry Andrewartha at
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>17/48</Count>
+    <Count>18/49</Count>
     <Category>Villa</Category>
     <code>7743</code>
     <Status>Vacant</Status>
@@ -5337,7 +5670,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino at [97
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>18/48</Count>
+    <Count>19/49</Count>
     <Category>Apartment</Category>
     <code>7742</code>
     <Status>Blocked</Status>
@@ -5594,7 +5927,7 @@ Don't miss your chance to experience ultimate luxury living at the One of One Lu
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>19/48</Count>
+    <Count>20/49</Count>
     <Category>Apartment</Category>
     <code>7738</code>
     <Status>Vacant</Status>
@@ -5903,7 +6236,7 @@ Please contact us for more details and information.]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>20/48</Count>
+    <Count>21/49</Count>
     <Category>Apartment</Category>
     <code>7733</code>
     <Status>Blocked</Status>
@@ -6285,7 +6618,7 @@ The building has swimming pool, gym and beautiful landscaped gardens on the Plaz
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>21/48</Count>
+    <Count>22/49</Count>
     <Category>Apartment</Category>
     <code>7729</code>
     <Status>Vacant</Status>
@@ -6627,7 +6960,7 @@ Jumeirah Beach Residence (JBR) is a buzzing beachside boulevard offering shoppin
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>22/48</Count>
+    <Count>23/49</Count>
     <Category>Apartment</Category>
     <code>7720</code>
     <Status>Blocked</Status>
@@ -6895,7 +7228,7 @@ For further details or to arrange a viewing, please contact Terry Andrewartha at
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>23/48</Count>
+    <Count>24/49</Count>
     <Category>Villa</Category>
     <code>7719</code>
     <Status>Vacant</Status>
@@ -7254,7 +7587,7 @@ Don’t miss the opportunity to make this exquisite property your own. Contact T
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>24/48</Count>
+    <Count>25/49</Count>
     <Category>Villa</Category>
     <code>7718</code>
     <Status>Vacant</Status>
@@ -7604,7 +7937,7 @@ Please contact us for more details and information.]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>25/48</Count>
+    <Count>26/49</Count>
     <Category>Villa</Category>
     <code>7715</code>
     <Status>Vacant</Status>
@@ -7984,7 +8317,7 @@ Get in touch with us today if you would like more information or to arrange a vi
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>26/48</Count>
+    <Count>27/49</Count>
     <Category>Villa</Category>
     <code>7714</code>
     <Status>Vacant</Status>
@@ -8314,7 +8647,7 @@ Don’t miss the chance to own a piece of paradise on the Palm Jumeirah. Contact
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>27/48</Count>
+    <Count>28/49</Count>
     <Category>Villa</Category>
     <code>7710</code>
     <Status>Vacant</Status>
@@ -8632,7 +8965,7 @@ For further details or to arrange a viewing please contact Linda Kuhn +97150 228
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>28/48</Count>
+    <Count>29/49</Count>
     <Category>Villa</Category>
     <code>7706</code>
     <Status>Vacant</Status>
@@ -8991,7 +9324,7 @@ Get in touch with us today if you would like more information or to arrange a vi
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>29/48</Count>
+    <Count>30/49</Count>
     <Category>Apartment</Category>
     <code>7687</code>
     <Status>Vacant</Status>
@@ -9311,7 +9644,7 @@ Get in touch with us today for more information or if you would like to arrange 
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>30/48</Count>
+    <Count>31/49</Count>
     <Category>Apartment</Category>
     <code>7684</code>
     <Status>Blocked</Status>
@@ -9667,7 +10000,7 @@ Property is Vacant in April ]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>31/48</Count>
+    <Count>32/49</Count>
     <Category>Apartment</Category>
     <code>7680</code>
     <Status>Vacant</Status>
@@ -9915,7 +10248,7 @@ Get in touch with us today for further information or to arrange a viewing.]]&gt
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>32/48</Count>
+    <Count>33/49</Count>
     <Category>Apartment</Category>
     <code>7676</code>
     <Status>Vacant</Status>
@@ -10246,7 +10579,7 @@ Get in touch today if you would like more information or to arrange a viewing.]]
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>33/48</Count>
+    <Count>34/49</Count>
     <Category>Apartment</Category>
     <code>7648</code>
     <Status>Vacant</Status>
@@ -10581,7 +10914,7 @@ Get in touch if you would like more information or if you would like to arrange 
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>34/48</Count>
+    <Count>35/49</Count>
     <Category>Apartment</Category>
     <code>7645</code>
     <Status>Vacant</Status>
@@ -10911,7 +11244,7 @@ Get in touch if you would like more information or if you would like to arrange 
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>35/48</Count>
+    <Count>36/49</Count>
     <Category>Apartment</Category>
     <code>7644</code>
     <Status>Vacant</Status>
@@ -11212,7 +11545,7 @@ Get in touch if you would like more information or if you would like to arrange 
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>36/48</Count>
+    <Count>37/49</Count>
     <Category>Apartment</Category>
     <code>7608</code>
     <Status>Vacant</Status>
@@ -11490,7 +11823,7 @@ The Luxury Collection Real Estate prides itself in providing the best properties
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>37/48</Count>
+    <Count>38/49</Count>
     <Category>Villa</Category>
     <code>7605</code>
     <Status>Vacant</Status>
@@ -11875,7 +12208,7 @@ Please contact us for more information and details.]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>38/48</Count>
+    <Count>39/49</Count>
     <Category>Apartment</Category>
     <code>7559</code>
     <Status>Vacant</Status>
@@ -12104,7 +12437,7 @@ Contact us today for further information or to arrange a viewing.]]&gt;</Remarks
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>39/48</Count>
+    <Count>40/49</Count>
     <Category>Villa</Category>
     <code>7557</code>
     <Status>Vacant</Status>
@@ -12557,7 +12890,7 @@ Experience the perfect blend of luxury, convenience, and comfort in this exquisi
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>40/48</Count>
+    <Count>41/49</Count>
     <Category>Villa</Category>
     <code>7543</code>
     <Status>Vacant</Status>
@@ -12566,7 +12899,7 @@ Experience the perfect blend of luxury, convenience, and comfort in this exquisi
     <PropertyName>Club Villas at Dubai Hills</PropertyName>
     <BuiltupArea>2997</BuiltupArea>
     <PlotArea>3951</PlotArea>
-    <Bedrooms>3</Bedrooms>
+    <Bedrooms>4</Bedrooms>
     <PrimaryUnitView>Golf Course</PrimaryUnitView>
     <PrimaryUnitViewId>81081</PrimaryUnitViewId>
     <SecondaryUnitView />
@@ -12576,18 +12909,17 @@ Experience the perfect blend of luxury, convenience, and comfort in this exquisi
     <HandoverDate>5/11/2023 5:05:36 PM</HandoverDate>
     <Agent>Fabio Carlino</Agent>
     <ContactNumber>971585951188</ContactNumber>
-    <Remarks>&lt;![CDATA[Fabio Carlino and The Luxury Collection are thrilled to present this exceptional 3-bedroom plus maids Club Villa, located in the prestigious Dubai Hills Estate on the Golf course side of the community. Exquisite fully-furnished property for luxurious contemporary living.
+    <Remarks>&lt;![CDATA[Fabio Carlino and The Luxury Collection are thrilled to present this exceptional  4-bedroom plus maids Club Villa, located in the prestigious Dubai Hills Estate on the Golf course side of the community. Exquisite fully-furnished property for luxurious contemporary living.
 
 Property Details:
 
--3 spacious bedrooms + maids
+-4 spacious bedrooms + maids
 -4 well-appointed bathrooms
 -Excellent plot size
 -Ready for immediate move-in
 -Premium location within the community
 -Backing onto community facilities for convenience
 -Community pool and gym access for an active lifestyle.
-
 
 Discover a modern townhouse with an inviting open living area, connecting seamlessly to a park-backing garden. Upstairs, enjoy three serene bedrooms. Club Villa, nestled in a gated community, offers a harmonious blend of natural beauty and contemporary living.
 
@@ -12600,7 +12932,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino. Exper
     <FinancingCompany />
     <Parking>1</Parking>
     <SubType />
-    <Rent>650000.0000</Rent>
+    <Rent>625000.0000</Rent>
     <SubCommunity>Club Villas at Dubai Hills</SubCommunity>
     <PropertyOverview />
     <LocalAreaAmenitiesDesc />
@@ -12620,7 +12952,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino. Exper
     <ProGooglecoordinates>82.93358,27.08385</ProGooglecoordinates>
     <BdmPkg />
     <SalesmanEmail>fabio@theluxurycollectiondxb.com</SalesmanEmail>
-    <LastUpdated>5/1/2025 1:21:59 PM</LastUpdated>
+    <LastUpdated>5/15/2025 4:15:01 PM</LastUpdated>
     <ListingDate>8/9/2024 5:25:15 PM</ListingDate>
     <ExpiryDate />
     <RecommendedProperties>no</RecommendedProperties>
@@ -12632,7 +12964,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino. Exper
     <Mandate>Non Exclusive</Mandate>
     <CurrencyAbr>AED</CurrencyAbr>
     <AreaMeasurement>Sq.Ft.</AreaMeasurement>
-    <RentPerMonth>54166.666666666666666666666667</RentPerMonth>
+    <RentPerMonth>52083.333333333333333333333333</RentPerMonth>
     <ReraStrNo>RERAStr-|TransactionNo-|PermitNo-69149087946</ReraStrNo>
     <Furnish_status>Unfurnished</Furnish_status>
     <Images>
@@ -12758,7 +13090,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino. Exper
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>41/48</Count>
+    <Count>42/49</Count>
     <Category>Villa</Category>
     <code>7498</code>
     <Status>Vacant</Status>
@@ -13020,7 +13352,7 @@ To experience the epitome of luxury living in Dubai Hills Estate, don't hesitate
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>42/48</Count>
+    <Count>43/49</Count>
     <Category>Apartment</Category>
     <code>7497</code>
     <Status>Vacant</Status>
@@ -13211,7 +13543,7 @@ For further details or to arrange a viewing please contact Linda Kuhn on +971 50
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>43/48</Count>
+    <Count>44/49</Count>
     <Category>Townhouse</Category>
     <code>7495</code>
     <Status>Vacant</Status>
@@ -13448,7 +13780,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino at [97
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>44/48</Count>
+    <Count>45/49</Count>
     <Category>Apartment</Category>
     <code>7461</code>
     <Status>Vacant</Status>
@@ -13695,7 +14027,7 @@ Beyond its luxurious confines, Murjan 3 opens doors to a vibrant retail and dini
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>45/48</Count>
+    <Count>46/49</Count>
     <Category>Villa</Category>
     <code>7455</code>
     <Status>Vacant</Status>
@@ -14009,7 +14341,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino or ema
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>46/48</Count>
+    <Count>47/49</Count>
     <Category>Apartment</Category>
     <code>7366</code>
     <Status>Vacant</Status>
@@ -14031,7 +14363,7 @@ For further details or to arrange a viewing, please contact Fabio Carlino or ema
     <Remarks>&lt;![CDATA[The Luxury Collection Real Estate presents a fully furnished 2-bedroom unit located in Bahar 1, JBR.
 
 rent for year
-AED 160,000
+AED 145,000
 
 Bahar 1 building brings you to this beautifully positioned unit, showcasing a 180-degree view of the Dubai Marina and, to the right, a portion of the JBR beachfront. 
 
@@ -14062,7 +14394,7 @@ Contact us to schedule a viewing today!]]&gt;</Remarks>
     <FinancingCompany />
     <Parking>0</Parking>
     <SubType />
-    <Rent>160000.0000</Rent>
+    <Rent>145000.0000</Rent>
     <SubCommunity>Bahar</SubCommunity>
     <PropertyOverview />
     <LocalAreaAmenitiesDesc />
@@ -14082,7 +14414,7 @@ Contact us to schedule a viewing today!]]&gt;</Remarks>
     <ProGooglecoordinates>55.13563,25.07718</ProGooglecoordinates>
     <BdmPkg />
     <SalesmanEmail>liam@theluxurycollectiondxb.com</SalesmanEmail>
-    <LastUpdated>5/6/2025 12:24:58 PM</LastUpdated>
+    <LastUpdated>5/16/2025 3:05:30 PM</LastUpdated>
     <ListingDate>4/9/2024 1:45:12 PM</ListingDate>
     <ExpiryDate />
     <RecommendedProperties>no</RecommendedProperties>
@@ -14094,7 +14426,7 @@ Contact us to schedule a viewing today!]]&gt;</Remarks>
     <Mandate>Non Exclusive</Mandate>
     <CurrencyAbr>AED</CurrencyAbr>
     <AreaMeasurement>Sq.Ft.</AreaMeasurement>
-    <RentPerMonth>13333.333333333333333333333333</RentPerMonth>
+    <RentPerMonth>12083.333333333333333333333333</RentPerMonth>
     <ReraStrNo>RERAStr-|TransactionNo-|PermitNo-7115633300</ReraStrNo>
     <Furnish_status>Furnished</Furnish_status>
     <Images>
@@ -14237,7 +14569,7 @@ Contact us to schedule a viewing today!]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>47/48</Count>
+    <Count>48/49</Count>
     <Category>Apartment</Category>
     <code>7340</code>
     <Status>Vacant</Status>
@@ -14415,7 +14747,7 @@ Please contact Liam for more details.]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>48/48</Count>
+    <Count>49/49</Count>
     <Category>Villa</Category>
     <code>7243</code>
     <Status>Vacant</Status>

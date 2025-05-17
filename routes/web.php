@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PropertyInquiryController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -35,6 +36,10 @@ Route::get('/contact-us', function () {
 // Property routes
 Route::get('/properties', [App\Http\Controllers\PropertyController::class, 'index'])->name('properties.index');
 Route::get('/properties/{property}', [App\Http\Controllers\PropertyController::class, 'show'])->name('properties.show');
+
+// Property inquiry routes
+Route::post('/property/viewing', [PropertyInquiryController::class, 'storeViewing'])->name('property.viewing');
+Route::post('/property/contact', [PropertyInquiryController::class, 'storeContact'])->name('property.contact');
 // Admin routes
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     // Import properties (must be before resource routes to prevent conflicts)

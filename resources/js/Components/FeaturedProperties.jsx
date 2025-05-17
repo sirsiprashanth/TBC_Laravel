@@ -292,7 +292,7 @@ Website: www.boros.com
                                             
                                             <div className="d-flex mt-3">
                                                 <Link
-                                                    href={route('properties.show', property.id)}
+                                                    href={`/properties/${property.id}`}
                                                     className="btn btn-sm btn-outline-dark me-2"
                                                     style={{
                                                         fontFamily: 'Glancyr',

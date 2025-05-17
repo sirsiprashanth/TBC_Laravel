@@ -2,7 +2,693 @@
 <ArrayOfUnitDTO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>1/21</Count>
+    <Count>1/20</Count>
+    <Category>Apartment</Category>
+    <code>7807</code>
+    <Status>Vacant</Status>
+    <RefNo>AP7807</RefNo>
+    <Community>Business Bay</Community>
+    <PropertyName>Aykon City Tower B</PropertyName>
+    <BuiltupArea>696</BuiltupArea>
+    <PlotArea />
+    <Bedrooms>1</Bedrooms>
+    <PrimaryUnitView>City</PrimaryUnitView>
+    <PrimaryUnitViewId>196109</PrimaryUnitViewId>
+    <SecondaryUnitView />
+    <SecondaryUnitViewId />
+    <UnitModel />
+    <FloorNo />
+    <HandoverDate />
+    <Agent>Adriano Borges</Agent>
+    <ContactNumber>971545908880</ContactNumber>
+    <Remarks>&lt;![CDATA[Adriano and The Luxury Collection Real Estate are proud to present this Elegant 1-bedroom apartment in Aykon City Tower B, located in the vibrant Business Bay area. This exquisite property boasts a generous built-up area .
+
+Key Highlights:
+- 1 bedroom, 1 bathroom
+- Size: 696 Sq. ft.
+- Sleek built-in kitchen appliances and wardrobes
+- Stunning views of the Building pool and Ocean
+- Abundant amenities including shared pool, spa, and gym
+- Covered parking and concierge service for convenience
+
+This apartment's thoughtful layout merges style and functionality, offering a lifestyle of comfort and leisure. Enjoy hosting gatherings on your private balcony or indulging in the lavish facilities available within the community. 
+
+Aykon City redefines urban living, surrounded by high-end dining, entertainment, and shopping options, ensuring a lavish lifestyle at every corner. 
+
+Inquire now with Adriano or The Luxury Collection Real Estate to schedule a viewing .]]&gt;</Remarks>
+    <CountryName>United Arab Emirates</CountryName>
+    <StateName>Dubai</StateName>
+    <CityName>Dubai</CityName>
+    <DistrictName>Downtown District</DistrictName>
+    <MarketingUsp />
+    <FinancingCompany />
+    <Parking>0</Parking>
+    <SubType />
+    <SellPrice>1350000.0000</SellPrice>
+    <SubCommunity>Aykon City</SubCommunity>
+    <PropertyOverview />
+    <LocalAreaAmenitiesDesc />
+    <DocumentWeb />
+    <NoOfBathrooms>1</NoOfBathrooms>
+    <RetUnitCategory>2</RetUnitCategory>
+    <PDFBrochureLink>https://images.goyzer.com/Pages/UnitCard.aspx?bzirWbXfLmsI9VRYOKPRU98VRpoCoWaEso4y4iaQ/mkE2eHoixquDZh1RD+CfA9/hU1bwT0dSbzFSxXKjJGsXw==</PDFBrochureLink>
+    <AgentID>1235</AgentID>
+    <PropertyID>1846</PropertyID>
+    <PropertyOwnershipDesc />
+    <CountryID>65946</CountryID>
+    <StateID>55367</StateID>
+    <CityID>54788</CityID>
+    <DistrictID>80120</DistrictID>
+    <CommunityID>199634</CommunityID>
+    <SubCommunityID>201779</SubCommunityID>
+    <AgentReraNo />
+    <ProGooglecoordinates>55.253,25.181</ProGooglecoordinates>
+    <BdmPkg />
+    <SalesmanEmail>adriano@theluxurycollectiondxb.com</SalesmanEmail>
+    <LastUpdated>5/16/2025 2:17:14 PM</LastUpdated>
+    <ListingDate>3/13/2025 12:05:53 PM</ListingDate>
+    <ExpiryDate />
+    <RecommendedProperties>no</RecommendedProperties>
+    <MarketingTitle>Fully Furnished | Sea-View | High Floor</MarketingTitle>
+    <MarketingOptions>Newspaper AD-No|Recommended Properties-No</MarketingOptions>
+    <AgentPhoto />
+    <ArabicTitle />
+    <ArabicDescription />
+    <Mandate>Non Exclusive</Mandate>
+    <CurrencyAbr>AED</CurrencyAbr>
+    <AreaMeasurement />
+    <ReraStrNo>RERAStr-|TransactionNo-|PermitNo-7128111488</ReraStrNo>
+    <Furnish_status>Furnished</Furnish_status>
+    <ListingType>Completed</ListingType>
+    <Images>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>Yes</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/012.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/003.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/001.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/002.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/005.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/004.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/008.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/007.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/006.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/010.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/011.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/009.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+    </Images>
+    <FittingFixtures>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>524</ID>
+        <Name>Available Networked</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>498</ID>
+        <Name>Balcony</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>522</ID>
+        <Name>Barbecue Are</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>499</ID>
+        <Name>Built-in Kitchen Appliances</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>501</ID>
+        <Name>Built-in Wardrobes</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>497</ID>
+        <Name>CentralA/C &amp; Heating</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>521</ID>
+        <Name>Children's PlayArea</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>520</ID>
+        <Name>Children's Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>503</ID>
+        <Name>Concierge Service</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>523</ID>
+        <Name>Conference Room</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>502</ID>
+        <Name>Covered Parking</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>525</ID>
+        <Name>Dining in building</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>504</ID>
+        <Name>Lobby in Building</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>506</ID>
+        <Name>Maid Service</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>508</ID>
+        <Name>Private Garden</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>511</ID>
+        <Name>Private Gym</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>509</ID>
+        <Name>Private Jacuzzi</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>510</ID>
+        <Name>Private Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>513</ID>
+        <Name>Security</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>517</ID>
+        <Name>Shared Gym</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>514</ID>
+        <Name>Shared Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>515</ID>
+        <Name>Shared Spa</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>516</ID>
+        <Name>Study</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>500</ID>
+        <Name>View of Landmark</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>518</ID>
+        <Name>View of Water</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>519</ID>
+        <Name>Walk-in Closet</Name>
+      </FittingFixture>
+    </FittingFixtures>
+    <Documents />
+    <OfferingType>RS</OfferingType>
+    <CustomFields />
+    <PriceOnApplication>No</PriceOnApplication>
+    <PermitNumber>7128111488</PermitNumber>
+  </UnitDTO>
+  <UnitDTO>
+    <PageIndex>1/1</PageIndex>
+    <Count>2/20</Count>
+    <Category>Apartment</Category>
+    <code>7762</code>
+    <Status>Vacant</Status>
+    <RefNo>AP7762</RefNo>
+    <Community>Jumeirah Beach Residence</Community>
+    <PropertyName>Murjan 6</PropertyName>
+    <BuiltupArea>2898.29</BuiltupArea>
+    <PlotArea />
+    <Bedrooms>4</Bedrooms>
+    <PrimaryUnitView />
+    <PrimaryUnitViewId />
+    <SecondaryUnitView />
+    <SecondaryUnitViewId />
+    <UnitModel />
+    <FloorNo />
+    <HandoverDate />
+    <Agent>Liam Pelser</Agent>
+    <ContactNumber>971585117221</ContactNumber>
+    <Remarks>&lt;![CDATA[Liam Pelser and The Luxury Collection Real Estate is proud to present this stunning 4-bedroom apartment located in Murjan 6, Jumeirah Beach Residence (JBR).
+
+Property Features:
+
+- 4 Bedrooms
+- 5 Bathrooms
+- Designated Parking
+- 2 Spacious Balconies
+- BUA- 2898sqft
+- Elegant, High-Quality Finishes
+- High Floor with Spectacular Views
+- Shared Swimming Pool
+- Shared Gym
+- Surrounded by Restaurants, Cafes, and Supermarkets
+- Nearby Pharmacies
+
+This luxurious apartment boasts breathtaking marina views. Located in the prestigious Murjan 6, a high-rise residential tower in the heart of JBR, residents enjoy access to world-class amenities and are steps away from the beach. The JBR community offers a vibrant lifestyle with a wide array of dining, shopping, and entertainment options along The Walk. Perfect for those seeking upscale living in a prime waterfront location.
+
+Don’t miss this opportunity! Contact The Luxury Collection Real Estate today to schedule a viewing and explore your future home.]]&gt;</Remarks>
+    <CountryName>United Arab Emirates</CountryName>
+    <StateName>Dubai</StateName>
+    <CityName>Dubai</CityName>
+    <DistrictName>Marina District</DistrictName>
+    <MarketingUsp />
+    <FinancingCompany />
+    <Parking>0</Parking>
+    <SubType />
+    <SellPrice>5300000.0000</SellPrice>
+    <SubCommunity>Murjan</SubCommunity>
+    <PropertyOverview />
+    <LocalAreaAmenitiesDesc />
+    <DocumentWeb />
+    <NoOfBathrooms>5</NoOfBathrooms>
+    <RetUnitCategory>2</RetUnitCategory>
+    <PDFBrochureLink>https://images.goyzer.com/Pages/UnitCard.aspx?2JXEaC8OSt00s61IvD6ohLhmll4HFQc3HhpUBHZpcEARD2zWCUtzWu9c+dRjk16by3rg6YTd5/XwrF9nkG3kxQ==</PDFBrochureLink>
+    <AgentID>1194</AgentID>
+    <PropertyID>3583</PropertyID>
+    <PropertyOwnershipDesc />
+    <CountryID>65946</CountryID>
+    <StateID>55367</StateID>
+    <CityID>54788</CityID>
+    <DistrictID>159896</DistrictID>
+    <CommunityID>199245</CommunityID>
+    <SubCommunityID>199921</SubCommunityID>
+    <AgentReraNo />
+    <ProGooglecoordinates>-77.5377,40.1149</ProGooglecoordinates>
+    <BdmPkg />
+    <SalesmanEmail>liam@theluxurycollectiondxb.com</SalesmanEmail>
+    <LastUpdated>5/12/2025 1:06:47 PM</LastUpdated>
+    <ListingDate>1/10/2025 2:04:08 PM</ListingDate>
+    <ExpiryDate />
+    <RecommendedProperties>no</RecommendedProperties>
+    <MarketingTitle>Panoramic Skyline View | Vacant | High Floor</MarketingTitle>
+    <MarketingOptions>Newspaper AD-No|Recommended Properties-No</MarketingOptions>
+    <AgentPhoto>https://images.goyzer.com/uf/5082/User/1194/Profile_5.jpg</AgentPhoto>
+    <ArabicTitle />
+    <ArabicDescription />
+    <Mandate>Non Exclusive</Mandate>
+    <CurrencyAbr>AED</CurrencyAbr>
+    <AreaMeasurement />
+    <ReraStrNo>RERAStr-|TransactionNo-|PermitNo-7115477600</ReraStrNo>
+    <Furnish_status>Furnished</Furnish_status>
+    <ListingType>Completed</ListingType>
+    <Images>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>Yes</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/25.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/28.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/4.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/24.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/10.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/1.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/18.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/17.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/21.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/7.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/3.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/9.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/13.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/27.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/30.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/33.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/36.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/35.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+      <Image>
+        <ImageType>Image</ImageType>
+        <Title />
+        <IsMarketingImage>No</IsMarketingImage>
+        <ImageRemarks />
+        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/37.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
+      </Image>
+    </Images>
+    <FittingFixtures>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>524</ID>
+        <Name>Available Networked</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>498</ID>
+        <Name>Balcony</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>522</ID>
+        <Name>Barbecue Are</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>499</ID>
+        <Name>Built-in Kitchen Appliances</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>501</ID>
+        <Name>Built-in Wardrobes</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>497</ID>
+        <Name>CentralA/C &amp; Heating</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>521</ID>
+        <Name>Children's PlayArea</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>520</ID>
+        <Name>Children's Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>503</ID>
+        <Name>Concierge Service</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>523</ID>
+        <Name>Conference Room</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>502</ID>
+        <Name>Covered Parking</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>525</ID>
+        <Name>Dining in building</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>504</ID>
+        <Name>Lobby in Building</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>506</ID>
+        <Name>Maid Service</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>505</ID>
+        <Name>Maid's Room</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>532</ID>
+        <Name>Mezzanine</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>531</ID>
+        <Name>Pantry</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>507</ID>
+        <Name>Pets Allowed</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>508</ID>
+        <Name>Private Garden</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>511</ID>
+        <Name>Private Gym</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>509</ID>
+        <Name>Private Jacuzzi</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>510</ID>
+        <Name>Private Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>513</ID>
+        <Name>Security</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>517</ID>
+        <Name>Shared Gym</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>514</ID>
+        <Name>Shared Pool</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>515</ID>
+        <Name>Shared Spa</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>516</ID>
+        <Name>Study</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>512</ID>
+        <Name>Vastu-compliant</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>500</ID>
+        <Name>View of Landmark</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>518</ID>
+        <Name>View of Water</Name>
+      </FittingFixture>
+      <FittingFixture>
+        <Title>Amenity</Title>
+        <ID>519</ID>
+        <Name>Walk-in Closet</Name>
+      </FittingFixture>
+    </FittingFixtures>
+    <Documents />
+    <OfferingType>RS</OfferingType>
+    <CustomFields />
+    <PriceOnApplication>No</PriceOnApplication>
+    <PermitNumber>7115477600</PermitNumber>
+  </UnitDTO>
+  <UnitDTO>
+    <PageIndex>1/1</PageIndex>
+    <Count>3/20</Count>
     <Category>Apartment</Category>
     <code>7806</code>
     <Status>Vacant</Status>
@@ -373,331 +1059,7 @@ For more details and information please contact Liam Pelser  at +971 58 511 7221
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>2/21</Count>
-    <Category>Apartment</Category>
-    <code>7775</code>
-    <Status>Vacant</Status>
-    <RefNo>AP7775</RefNo>
-    <Community>Dubai Marina</Community>
-    <PropertyName>Marina Diamond 1</PropertyName>
-    <BuiltupArea>719.03</BuiltupArea>
-    <PlotArea />
-    <Bedrooms>1</Bedrooms>
-    <PrimaryUnitView />
-    <PrimaryUnitViewId />
-    <SecondaryUnitView />
-    <SecondaryUnitViewId />
-    <UnitModel />
-    <FloorNo />
-    <HandoverDate />
-    <Agent>Liam Pelser</Agent>
-    <ContactNumber>971585117221</ContactNumber>
-    <Remarks>&lt;![CDATA[The Luxury Collection Real Estate would like to present this well-sized 1-bedroom apartment located in Marina Diamond 1, offering stunning views of Sheikh Zayed Road. This vacant apartment is an excellent choice for those seeking a stylish, accessible residence in one of Dubai’s most vibrant neighbourhoods.
-
-Property Details:
-
-- Fully Furnished
-- BUA Size: 719.03 sq. ft.
-- View: Community
-- with Balcony
-- with Covered parking
-
-Project Amenities:
-
-• Central A/C
-• Covered Parking
-• Security
-• Sauna
-• Gymnasium
-• Swimming Pool
-• Covered Parking
-• 24 Hour Security
-
-Marina Diamond is a collection of modern residential towers located in the vibrant Dubai Marina district, offering a range of stylish apartments with contemporary designs and high-quality finishes. The development features spacious one and two-bedroom units, each designed to provide comfort and convenience for residents. Marina Diamond offers a variety of amenities, including a swimming pool, fitness center, and landscaped gardens. Its prime location in Dubai Marina provides easy access to the waterfront, cafes, restaurants, shopping malls, and entertainment options, making it an ideal choice for those seeking a dynamic and luxurious lifestyle in one of Dubai's most sought-after neighborhoods.
-
-The Marina Diamond Towers will be freehold residential towers with 15 or 20 floors, being built at a total cost of AED 740 million (US$ 200 million). They will be located on southern shore of the marina and collectively have 1,300 units from studios to 3-bedroom apartments.]]&gt;</Remarks>
-    <CountryName>United Arab Emirates</CountryName>
-    <StateName>Dubai</StateName>
-    <CityName>Dubai</CityName>
-    <DistrictName>Marina District</DistrictName>
-    <MarketingUsp />
-    <FinancingCompany />
-    <Parking>0</Parking>
-    <SubType />
-    <SellPrice>1000000.0000</SellPrice>
-    <SubCommunity>Marina Diamonds</SubCommunity>
-    <PropertyOverview />
-    <LocalAreaAmenitiesDesc />
-    <DocumentWeb />
-    <NoOfBathrooms>2</NoOfBathrooms>
-    <RetUnitCategory>2</RetUnitCategory>
-    <PDFBrochureLink>https://images.goyzer.com/Pages/UnitCard.aspx?NXwistrPCgvVmkxK5B3Dc+NImc05CM9D0evN7ZwmMo2iMbhakKnTs7nQxNKwfXLW9XzYUty0NOZn5OVqPY7jyQ==</PDFBrochureLink>
-    <AgentID>1194</AgentID>
-    <PropertyID>2717</PropertyID>
-    <PropertyOwnershipDesc />
-    <CountryID>65946</CountryID>
-    <StateID>55367</StateID>
-    <CityID>54788</CityID>
-    <DistrictID>159896</DistrictID>
-    <CommunityID>199242</CommunityID>
-    <SubCommunityID>199827</SubCommunityID>
-    <AgentReraNo />
-    <ProGooglecoordinates>-77.5377,40.1149</ProGooglecoordinates>
-    <BdmPkg />
-    <SalesmanEmail>liam@theluxurycollectiondxb.com</SalesmanEmail>
-    <LastUpdated>5/7/2025 11:43:46 AM</LastUpdated>
-    <ListingDate>2/10/2025 1:27:09 PM</ListingDate>
-    <ExpiryDate />
-    <RecommendedProperties>no</RecommendedProperties>
-    <MarketingTitle>Renovated | Tenanted at 90K | Motivated Seller</MarketingTitle>
-    <MarketingOptions>Newspaper AD-No|Recommended Properties-No</MarketingOptions>
-    <AgentPhoto>https://images.goyzer.com/uf/5082/User/1194/Profile_5.jpg</AgentPhoto>
-    <ArabicTitle />
-    <ArabicDescription />
-    <Mandate>Non Exclusive</Mandate>
-    <CurrencyAbr>AED</CurrencyAbr>
-    <AreaMeasurement />
-    <ReraStrNo>RERAStr-|TransactionNo-|PermitNo-7116135200</ReraStrNo>
-    <Furnish_status>Furnished</Furnish_status>
-    <ListingType>Completed</ListingType>
-    <Images>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>Yes</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/001.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/003.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/004.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/005.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/002.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/006.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/007.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/1.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/2.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7775/3.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-    </Images>
-    <FittingFixtures>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>524</ID>
-        <Name>Available Networked</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>498</ID>
-        <Name>Balcony</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>522</ID>
-        <Name>Barbecue Are</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>499</ID>
-        <Name>Built-in Kitchen Appliances</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>501</ID>
-        <Name>Built-in Wardrobes</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>497</ID>
-        <Name>CentralA/C &amp; Heating</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>521</ID>
-        <Name>Children's PlayArea</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>520</ID>
-        <Name>Children's Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>503</ID>
-        <Name>Concierge Service</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>523</ID>
-        <Name>Conference Room</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>502</ID>
-        <Name>Covered Parking</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>525</ID>
-        <Name>Dining in building</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>504</ID>
-        <Name>Lobby in Building</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>506</ID>
-        <Name>Maid Service</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>505</ID>
-        <Name>Maid's Room</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>532</ID>
-        <Name>Mezzanine</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>531</ID>
-        <Name>Pantry</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>507</ID>
-        <Name>Pets Allowed</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>508</ID>
-        <Name>Private Garden</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>511</ID>
-        <Name>Private Gym</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>509</ID>
-        <Name>Private Jacuzzi</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>510</ID>
-        <Name>Private Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>513</ID>
-        <Name>Security</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>517</ID>
-        <Name>Shared Gym</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>514</ID>
-        <Name>Shared Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>515</ID>
-        <Name>Shared Spa</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>516</ID>
-        <Name>Study</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>512</ID>
-        <Name>Vastu-compliant</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>500</ID>
-        <Name>View of Landmark</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>518</ID>
-        <Name>View of Water</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>519</ID>
-        <Name>Walk-in Closet</Name>
-      </FittingFixture>
-    </FittingFixtures>
-    <Documents />
-    <OfferingType>RS</OfferingType>
-    <CustomFields />
-    <PriceOnApplication>No</PriceOnApplication>
-    <PermitNumber>7116135200</PermitNumber>
-  </UnitDTO>
-  <UnitDTO>
-    <PageIndex>1/1</PageIndex>
-    <Count>3/21</Count>
+    <Count>4/20</Count>
     <Category>Townhouse</Category>
     <code>7824</code>
     <Status>Vacant</Status>
@@ -1022,7 +1384,7 @@ Don't miss the opportunity to make this exclusive property your new home. Contac
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>4/21</Count>
+    <Count>5/20</Count>
     <Category>Apartment</Category>
     <code>7823</code>
     <Status>Vacant</Status>
@@ -1183,7 +1545,7 @@ For further details or to schedule a viewing, please reach out to Adriano or  Th
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>5/21</Count>
+    <Count>6/20</Count>
     <Category>Apartment</Category>
     <code>7784</code>
     <Status>Vacant</Status>
@@ -1398,7 +1760,7 @@ Experience the epitome of modern living. Contact Adriano or The Luxury Collectio
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>6/21</Count>
+    <Count>7/20</Count>
     <Category>Apartment</Category>
     <code>7793</code>
     <Status>Vacant</Status>
@@ -1586,311 +1948,7 @@ Don’t miss your chance to own a piece of elegance in one of Dubai's most sough
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>7/21</Count>
-    <Category>Apartment</Category>
-    <code>7807</code>
-    <Status>Vacant</Status>
-    <RefNo>AP7807</RefNo>
-    <Community>Business Bay</Community>
-    <PropertyName>Aykon City Tower B</PropertyName>
-    <BuiltupArea>696</BuiltupArea>
-    <PlotArea />
-    <Bedrooms>1</Bedrooms>
-    <PrimaryUnitView>City</PrimaryUnitView>
-    <PrimaryUnitViewId>196109</PrimaryUnitViewId>
-    <SecondaryUnitView />
-    <SecondaryUnitViewId />
-    <UnitModel />
-    <FloorNo />
-    <HandoverDate />
-    <Agent>Adriano Borges</Agent>
-    <ContactNumber>971545908880</ContactNumber>
-    <Remarks>&lt;![CDATA[Adriano and The Luxury Collection Real Estate are proud to present this Elegant 1-bedroom apartment in Aykon City Tower B, located in the vibrant Business Bay area. This exquisite property boasts a generous built-up area .
-
-Key Highlights:
-- 1 bedroom, 1 bathroom
--Size: 696Sqft
-- Sleek built-in kitchen appliances and wardrobes
-- Stunning views of the Building pool and Ocean
-- Abundant amenities including shared pool, spa, and gym
-- Covered parking and concierge service for convenience
-
-This apartment's thoughtful layout merges style and functionality, offering a lifestyle of comfort and leisure. Enjoy hosting gatherings on your private balcony or indulging in the lavish facilities available within the community. 
-
-Aykon City redefines urban living, surrounded by high-end dining, entertainment, and shopping options, ensuring a lavish lifestyle at every corner. 
-
-Inquire now with Adriano or The Luxury Collection Real Estate to schedule a viewing .]]&gt;</Remarks>
-    <CountryName>United Arab Emirates</CountryName>
-    <StateName>Dubai</StateName>
-    <CityName>Dubai</CityName>
-    <DistrictName>Downtown District</DistrictName>
-    <MarketingUsp />
-    <FinancingCompany />
-    <Parking>0</Parking>
-    <SubType />
-    <SellPrice>1350000.0000</SellPrice>
-    <SubCommunity>Aykon City</SubCommunity>
-    <PropertyOverview />
-    <LocalAreaAmenitiesDesc />
-    <DocumentWeb />
-    <NoOfBathrooms>1</NoOfBathrooms>
-    <RetUnitCategory>2</RetUnitCategory>
-    <PDFBrochureLink>https://images.goyzer.com/Pages/UnitCard.aspx?bzirWbXfLmsI9VRYOKPRU98VRpoCoWaEso4y4iaQ/mkE2eHoixquDZh1RD+CfA9/hU1bwT0dSbzFSxXKjJGsXw==</PDFBrochureLink>
-    <AgentID>1235</AgentID>
-    <PropertyID>1846</PropertyID>
-    <PropertyOwnershipDesc />
-    <CountryID>65946</CountryID>
-    <StateID>55367</StateID>
-    <CityID>54788</CityID>
-    <DistrictID>80120</DistrictID>
-    <CommunityID>199634</CommunityID>
-    <SubCommunityID>201779</SubCommunityID>
-    <AgentReraNo />
-    <ProGooglecoordinates>55.253,25.181</ProGooglecoordinates>
-    <BdmPkg />
-    <SalesmanEmail>adriano@theluxurycollectiondxb.com</SalesmanEmail>
-    <LastUpdated>5/5/2025 9:45:53 AM</LastUpdated>
-    <ListingDate>3/13/2025 12:05:53 PM</ListingDate>
-    <ExpiryDate />
-    <RecommendedProperties>no</RecommendedProperties>
-    <MarketingTitle>Fully Furnished | Sea-View | High Floor</MarketingTitle>
-    <MarketingOptions>Newspaper AD-No|Recommended Properties-No</MarketingOptions>
-    <AgentPhoto />
-    <ArabicTitle />
-    <ArabicDescription />
-    <Mandate>Non Exclusive</Mandate>
-    <CurrencyAbr>AED</CurrencyAbr>
-    <AreaMeasurement />
-    <ReraStrNo>RERAStr-|TransactionNo-|PermitNo-7128111488</ReraStrNo>
-    <Furnish_status>Furnished</Furnish_status>
-    <ListingType>Completed</ListingType>
-    <Images>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>Yes</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/012.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/003.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/001.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/002.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/005.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/004.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/008.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/007.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/006.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/010.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/011.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7807/009.jpg&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-    </Images>
-    <FittingFixtures>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>524</ID>
-        <Name>Available Networked</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>498</ID>
-        <Name>Balcony</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>522</ID>
-        <Name>Barbecue Are</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>499</ID>
-        <Name>Built-in Kitchen Appliances</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>501</ID>
-        <Name>Built-in Wardrobes</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>497</ID>
-        <Name>CentralA/C &amp; Heating</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>521</ID>
-        <Name>Children's PlayArea</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>520</ID>
-        <Name>Children's Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>503</ID>
-        <Name>Concierge Service</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>523</ID>
-        <Name>Conference Room</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>502</ID>
-        <Name>Covered Parking</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>525</ID>
-        <Name>Dining in building</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>504</ID>
-        <Name>Lobby in Building</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>506</ID>
-        <Name>Maid Service</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>508</ID>
-        <Name>Private Garden</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>511</ID>
-        <Name>Private Gym</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>509</ID>
-        <Name>Private Jacuzzi</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>510</ID>
-        <Name>Private Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>513</ID>
-        <Name>Security</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>517</ID>
-        <Name>Shared Gym</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>514</ID>
-        <Name>Shared Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>515</ID>
-        <Name>Shared Spa</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>516</ID>
-        <Name>Study</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>500</ID>
-        <Name>View of Landmark</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>518</ID>
-        <Name>View of Water</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>519</ID>
-        <Name>Walk-in Closet</Name>
-      </FittingFixture>
-    </FittingFixtures>
-    <Documents />
-    <OfferingType>RS</OfferingType>
-    <CustomFields />
-    <PriceOnApplication>No</PriceOnApplication>
-    <PermitNumber>7128111488</PermitNumber>
-  </UnitDTO>
-  <UnitDTO>
-    <PageIndex>1/1</PageIndex>
-    <Count>8/21</Count>
+    <Count>8/20</Count>
     <Category>Apartment</Category>
     <code>7819</code>
     <Status>Vacant</Status>
@@ -2187,7 +2245,7 @@ Experience the exceptional living that Afnan 4 provides. Contact Adriano or The 
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>9/21</Count>
+    <Count>9/20</Count>
     <Category>Villa</Category>
     <code>7794</code>
     <Status>Vacant</Status>
@@ -2512,7 +2570,7 @@ For further details or to schedule a viewing, please connect with Adriano or The
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>10/21</Count>
+    <Count>10/20</Count>
     <Category>Apartment</Category>
     <code>7797</code>
     <Status>Vacant</Status>
@@ -2706,7 +2764,7 @@ For more information, please contact Adriano or The Luxury Collection Real Estat
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>11/21</Count>
+    <Count>11/20</Count>
     <Category>Apartment</Category>
     <code>7821</code>
     <Status>Vacant</Status>
@@ -3035,7 +3093,7 @@ Please call for more information, to arrange a viewing or to make an offer.]]&gt
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>12/21</Count>
+    <Count>12/20</Count>
     <Category>Apartment</Category>
     <code>7820</code>
     <Status>Vacant</Status>
@@ -3225,389 +3283,7 @@ Contact us today for further details or to schedule a private viewing of this re
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>13/21</Count>
-    <Category>Apartment</Category>
-    <code>7762</code>
-    <Status>Vacant</Status>
-    <RefNo>AP7762</RefNo>
-    <Community>Jumeirah Beach Residence</Community>
-    <PropertyName>Murjan 6</PropertyName>
-    <BuiltupArea>2898.29</BuiltupArea>
-    <PlotArea />
-    <Bedrooms>4</Bedrooms>
-    <PrimaryUnitView />
-    <PrimaryUnitViewId />
-    <SecondaryUnitView />
-    <SecondaryUnitViewId />
-    <UnitModel />
-    <FloorNo />
-    <HandoverDate />
-    <Agent>Liam Pelser</Agent>
-    <ContactNumber>971585117221</ContactNumber>
-    <Remarks>&lt;![CDATA[Liam Pelser and The Luxury Collection Real Estate is proud to present this stunning 4-bedroom apartment located in Murjan 6, Jumeirah Beach Residence (JBR).
-
-Property Features:
-
-- 4 Bedrooms
-- 5 Bathrooms
-- Designated Parking
-- 2 Spacious Balconies
-- BUA- 2898sqft
-- Elegant, High-Quality Finishes
-- High Floor with Spectacular Views
-- Shared Swimming Pool
-- Shared Gym
-- Surrounded by Restaurants, Cafes, and Supermarkets
-- Nearby Pharmacies
-
-This luxurious apartment boasts breathtaking marina views. Located in the prestigious Murjan 6, a high-rise residential tower in the heart of JBR, residents enjoy access to world-class amenities and are steps away from the beach. The JBR community offers a vibrant lifestyle with a wide array of dining, shopping, and entertainment options along The Walk. Perfect for those seeking upscale living in a prime waterfront location.
-
-Don’t miss this opportunity! Contact The Luxury Collection Real Estate today to schedule a viewing and explore your future home.]]&gt;</Remarks>
-    <CountryName>United Arab Emirates</CountryName>
-    <StateName>Dubai</StateName>
-    <CityName>Dubai</CityName>
-    <DistrictName>Marina District</DistrictName>
-    <MarketingUsp />
-    <FinancingCompany />
-    <Parking>0</Parking>
-    <SubType />
-    <SellPrice>5500000.0000</SellPrice>
-    <SubCommunity>Murjan</SubCommunity>
-    <PropertyOverview />
-    <LocalAreaAmenitiesDesc />
-    <DocumentWeb />
-    <NoOfBathrooms>5</NoOfBathrooms>
-    <RetUnitCategory>2</RetUnitCategory>
-    <PDFBrochureLink>https://images.goyzer.com/Pages/UnitCard.aspx?2JXEaC8OSt00s61IvD6ohLhmll4HFQc3HhpUBHZpcEARD2zWCUtzWu9c+dRjk16by3rg6YTd5/XwrF9nkG3kxQ==</PDFBrochureLink>
-    <AgentID>1194</AgentID>
-    <PropertyID>3583</PropertyID>
-    <PropertyOwnershipDesc />
-    <CountryID>65946</CountryID>
-    <StateID>55367</StateID>
-    <CityID>54788</CityID>
-    <DistrictID>159896</DistrictID>
-    <CommunityID>199245</CommunityID>
-    <SubCommunityID>199921</SubCommunityID>
-    <AgentReraNo />
-    <ProGooglecoordinates>-77.5377,40.1149</ProGooglecoordinates>
-    <BdmPkg />
-    <SalesmanEmail>liam@theluxurycollectiondxb.com</SalesmanEmail>
-    <LastUpdated>4/4/2025 11:29:54 AM</LastUpdated>
-    <ListingDate>1/10/2025 2:04:08 PM</ListingDate>
-    <ExpiryDate />
-    <RecommendedProperties>no</RecommendedProperties>
-    <MarketingTitle>Panoramic Skyline View | Vacant | High Floor</MarketingTitle>
-    <MarketingOptions>Newspaper AD-No|Recommended Properties-No</MarketingOptions>
-    <AgentPhoto>https://images.goyzer.com/uf/5082/User/1194/Profile_5.jpg</AgentPhoto>
-    <ArabicTitle />
-    <ArabicDescription />
-    <Mandate>Non Exclusive</Mandate>
-    <CurrencyAbr>AED</CurrencyAbr>
-    <AreaMeasurement />
-    <ReraStrNo>RERAStr-|TransactionNo-|PermitNo-7115477600</ReraStrNo>
-    <Furnish_status>Furnished</Furnish_status>
-    <ListingType>Completed</ListingType>
-    <Images>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>Yes</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/28.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/4.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/25.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/24.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/10.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/1.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/18.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/17.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/21.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/7.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/3.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/9.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/13.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/27.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/30.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/33.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/36.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/35.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-      <Image>
-        <ImageType>Image</ImageType>
-        <Title />
-        <IsMarketingImage>No</IsMarketingImage>
-        <ImageRemarks />
-        <ImageURL>https://images.goyzer.com/images/watermark.aspx?imageurl=/uf/5082/unit/7762/37.png&amp;group=5082&amp;module=1&amp;watermarktype=default&amp;position=Center</ImageURL>
-      </Image>
-    </Images>
-    <FittingFixtures>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>524</ID>
-        <Name>Available Networked</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>498</ID>
-        <Name>Balcony</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>522</ID>
-        <Name>Barbecue Are</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>499</ID>
-        <Name>Built-in Kitchen Appliances</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>501</ID>
-        <Name>Built-in Wardrobes</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>497</ID>
-        <Name>CentralA/C &amp; Heating</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>521</ID>
-        <Name>Children's PlayArea</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>520</ID>
-        <Name>Children's Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>503</ID>
-        <Name>Concierge Service</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>523</ID>
-        <Name>Conference Room</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>502</ID>
-        <Name>Covered Parking</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>525</ID>
-        <Name>Dining in building</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>504</ID>
-        <Name>Lobby in Building</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>506</ID>
-        <Name>Maid Service</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>505</ID>
-        <Name>Maid's Room</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>532</ID>
-        <Name>Mezzanine</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>531</ID>
-        <Name>Pantry</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>507</ID>
-        <Name>Pets Allowed</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>508</ID>
-        <Name>Private Garden</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>511</ID>
-        <Name>Private Gym</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>509</ID>
-        <Name>Private Jacuzzi</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>510</ID>
-        <Name>Private Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>513</ID>
-        <Name>Security</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>517</ID>
-        <Name>Shared Gym</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>514</ID>
-        <Name>Shared Pool</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>515</ID>
-        <Name>Shared Spa</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>516</ID>
-        <Name>Study</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>512</ID>
-        <Name>Vastu-compliant</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>500</ID>
-        <Name>View of Landmark</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>518</ID>
-        <Name>View of Water</Name>
-      </FittingFixture>
-      <FittingFixture>
-        <Title>Amenity</Title>
-        <ID>519</ID>
-        <Name>Walk-in Closet</Name>
-      </FittingFixture>
-    </FittingFixtures>
-    <Documents />
-    <OfferingType>RS</OfferingType>
-    <CustomFields />
-    <PriceOnApplication>No</PriceOnApplication>
-    <PermitNumber>7115477600</PermitNumber>
-  </UnitDTO>
-  <UnitDTO>
-    <PageIndex>1/1</PageIndex>
-    <Count>14/21</Count>
+    <Count>13/20</Count>
     <Category>Apartment</Category>
     <code>7816</code>
     <Status>Blocked</Status>
@@ -3837,7 +3513,7 @@ Price AED 2,400,000]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>15/21</Count>
+    <Count>14/20</Count>
     <Category>Apartment</Category>
     <code>7817</code>
     <Status>Vacant</Status>
@@ -4198,7 +3874,7 @@ Please contact us for more details and information.]]&gt;</Remarks>
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>16/21</Count>
+    <Count>15/20</Count>
     <Category>Apartment</Category>
     <code>7721</code>
     <Status>Blocked</Status>
@@ -4520,7 +4196,7 @@ The study is fitted with sublet in-storage and finally the maids room is fitted 
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>17/21</Count>
+    <Count>16/20</Count>
     <Category>Penthouse</Category>
     <code>7539</code>
     <Status>Blocked</Status>
@@ -5087,7 +4763,7 @@ Contact Linda Kuhn to arrange viewings and get further details on this amazing p
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>18/21</Count>
+    <Count>17/20</Count>
     <Category>Apartment</Category>
     <code>7672</code>
     <Status>Blocked</Status>
@@ -5346,7 +5022,7 @@ Samana Portofino is a luxurious residential masterpiece, nestled in Dubai Produc
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>19/21</Count>
+    <Count>18/20</Count>
     <Category>Townhouse</Category>
     <code>7768</code>
     <Status>Blocked</Status>
@@ -5677,7 +5353,7 @@ Don’t miss your chance to own this remarkable property. Contact The Luxury Col
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>20/21</Count>
+    <Count>19/20</Count>
     <Category>Apartment</Category>
     <code>7513</code>
     <Status>Blocked</Status>
@@ -5822,7 +5498,7 @@ Please contact Matt  at +97152 4700834 for more information and details.]]&gt;</
   </UnitDTO>
   <UnitDTO>
     <PageIndex>1/1</PageIndex>
-    <Count>21/21</Count>
+    <Count>20/20</Count>
     <Category>Apartment</Category>
     <code>7476</code>
     <Status>Blocked</Status>

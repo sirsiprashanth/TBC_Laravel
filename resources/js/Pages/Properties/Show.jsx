@@ -4,15 +4,29 @@ import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
 import SimilarPropertiesSection from '../../Components/SimilarPropertiesSection';
 import TestimonialVideos from '../../Components/TestimonialVideos';
+import PropertyContactForm from '../../Components/PropertyContactForm';
 import { Link } from '@inertiajs/react';
 
 export default function PropertyShow({ property, similarProperties }) {
+    // Debug log to check if data is being received
+    console.log('PropertyShow component mounted with:', { property, similarProperties });
+    
+    // Ensure property is defined
+    if (!property) {
+        console.error('Property is undefined');
+        return <div>Property not found</div>;
+    }
+    
     // State for current main image
     const [mainImage, setMainImage] = useState(
         property.images && property.images.length > 0 
             ? property.images[0] 
             : '/assets/img/property.png'
     );
+    
+    // State for modals
+    const [showViewingModal, setShowViewingModal] = useState(false);
+    const [showContactModal, setShowContactModal] = useState(false);
     
     // Format amenities for display if they exist
     const amenitiesList = property.amenities
@@ -376,8 +390,11 @@ export default function PropertyShow({ property, similarProperties }) {
                                         </a>
                                     </div>
                                     
-                                    <a 
-                                        href="#" 
+                                    <button 
+                                        onClick={() => {
+                                            console.log('Book a viewing clicked');
+                                            setShowViewingModal(true);
+                                        }}
                                         className="btn d-block mb-3"
                                         style={{
                                             backgroundColor: '#1A202C',
@@ -386,14 +403,19 @@ export default function PropertyShow({ property, similarProperties }) {
                                             padding: '12px 25px',
                                             fontFamily: 'Glancyr',
                                             fontSize: '14px',
-                                            textAlign: 'center'
+                                            textAlign: 'center',
+                                            border: 'none',
+                                            width: '100%'
                                         }}
                                     >
                                         Book A Viewing
-                                    </a>
+                                    </button>
                                     
-                                    <a 
-                                        href={`mailto:${property.agent_contact || 'info@boros.com'}`} 
+                                    <button 
+                                        onClick={() => {
+                                            console.log('DM agent clicked');
+                                            setShowContactModal(true);
+                                        }}
                                         className="btn d-block"
                                         style={{
                                             backgroundColor: '#F97316',
@@ -402,11 +424,13 @@ export default function PropertyShow({ property, similarProperties }) {
                                             padding: '12px 25px',
                                             fontFamily: 'Glancyr',
                                             fontSize: '14px',
-                                            textAlign: 'center'
+                                            textAlign: 'center',
+                                            border: 'none',
+                                            width: '100%'
                                         }}
                                     >
                                         DM Our Agent
-                                    </a>
+                                    </button>
                                 </div>
                                 
                                 {/* Map */}
@@ -448,7 +472,7 @@ export default function PropertyShow({ property, similarProperties }) {
                         <div className="row mt-4">
                             <div className="col-12">
                                 <Link 
-                                    href="/sell" 
+                                    href={property.is_rental ? "/rent" : "/sell"}
                                     className="btn"
                                     style={{
                                         backgroundColor: '#F97316',
@@ -521,7 +545,7 @@ export default function PropertyShow({ property, similarProperties }) {
                                                         </div>
                                                     </div>
                                                     <Link 
-                                                        href={route('properties.show', similar.id)} 
+                                                        href={`/properties/${similar.id}`}
                                                         className="btn btn-sm btn-outline-dark mt-3 w-100"
                                                         style={{ fontFamily: 'Glancyr' }}
                                                     >
@@ -540,6 +564,21 @@ export default function PropertyShow({ property, similarProperties }) {
                 <TestimonialVideos />
                 <Footer />
             </div>
+            
+            {/* Contact Modals */}
+            <PropertyContactForm 
+                show={showViewingModal}
+                onClose={() => setShowViewingModal(false)}
+                property={property}
+                type="viewing"
+            />
+            
+            <PropertyContactForm 
+                show={showContactModal}
+                onClose={() => setShowContactModal(false)}
+                property={property}
+                type="contact"
+            />
         </>
     );
 }
