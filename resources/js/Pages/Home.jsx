@@ -1,4 +1,5 @@
 import { Head, Link } from '@inertiajs/react';
+import Banner from '../Components/Banner';
 import Navbar from '../Components/Navbar';
 import Hero from '../Components/Hero';
 import PropertyListings from '../Components/PropertyListings';
@@ -14,6 +15,7 @@ export default function Home({ auth }) {
     return (
         <>
             <Head title="Home" />
+            <Banner />
             <div className="text-center" style={{borderColor: 'var(--bs-indigo)', background: 'rgb(255,241,222)'}}>
                 <Navbar />
                 <Hero />
