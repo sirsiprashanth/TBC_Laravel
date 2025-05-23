@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from '@inertiajs/react';
 
 // Individual service card component
-const ServiceCard = ({ title, description, imageSrc }) => {
+const ServiceCard = ({ title, description, imageSrc, href }) => {
     return (
         <div className="service-card p-4 mb-4" style={{ 
             border: '1px solid #E6D7C3',
@@ -27,7 +27,7 @@ const ServiceCard = ({ title, description, imageSrc }) => {
                     </p>
                     <div className="mt-auto">
                         <Link 
-                            href="#" 
+                            href={href || "#"} 
                             className="btn d-flex align-items-center justify-content-center mx-auto" 
                             style={{
                                 borderRadius: '25px',
@@ -57,17 +57,20 @@ export default function ServiceCards() {
         {
             title: "Buy A Home",
             description: "Your Dream Home Awaits. Let Us Guide You To The Perfect Residence That Complements Your Lifestyle.",
-            imageSrc: "/assets/img/image3.png"
+            imageSrc: "/assets/img/image3.png",
+            href: "/sell"
         },
         {
             title: "Sell A Home",
             description: "Maximize Your Property's Value With Our Tailored Marketing Strategies And Expert Negotiation.",
-            imageSrc: "/assets/img/image4.png"
+            imageSrc: "/assets/img/image4.png",
+            href: "/sell"
         },
         {
             title: "Rent A Home",
             description: "From Off-Market Opportunities To High-Yield Rentals, We Identify Real Estate Assets That Build Wealth.",
-            imageSrc: "/assets/img/image5.png"
+            imageSrc: "/assets/img/image5.png",
+            href: "/rent"
         }
     ];
 

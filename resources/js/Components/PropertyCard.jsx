@@ -1,6 +1,6 @@
 import { Link } from '@inertiajs/react';
 
-export default function PropertyCard({ title, description, buttonText, imageSrc }) {
+export default function PropertyCard({ title, description, buttonText, imageSrc, href }) {
     return (
         <div className="col-md-4 py-2" style={{borderColor: 'rgb(253, 240, 221)', background: 'rgb(253, 240, 221)'}}>
             <div style={{padding: '15px', border: '1px solid #ede1cd', borderRadius: '8px', backgroundColor: 'rgb(253, 240, 221)'}}>
@@ -16,7 +16,7 @@ export default function PropertyCard({ title, description, buttonText, imageSrc 
                 </p>
                 <div className="text-center">
                     <Link 
-                        href="#" 
+                        href={href || "#"} 
                         className="btn px-4 py-2" 
                         style={{
                             borderRadius: '25px', 

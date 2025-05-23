@@ -7,19 +7,22 @@ export default function PropertyListings() {
             title: "Villas & Estates",
             description: "Private Sanctuaries in Dubai's Elite Communities.",
             buttonText: "View Villas",
-            imageSrc: "/assets/img/image.png"
+            imageSrc: "/assets/img/image.png",
+            href: "/sell?property_type=Villa"
         },
         {
             title: "Penthouses & Apartments",
             description: "Architectural Masterpieces in The City's Most Coveted Towers.",
             buttonText: "View Apartments",
-            imageSrc: "/assets/img/image1.png"
+            imageSrc: "/assets/img/image1.png",
+            href: "/sell?property_type=Apartment"
         },
         {
             title: "Off-Plan & Investment Opportunities",
             description: "High-Yield, Future-Ready Developments.",
             buttonText: "View Opportunities",
-            imageSrc: "/assets/img/image2.png"
+            imageSrc: "/assets/img/image2.png",
+            href: "/off-plan"
         }
     ];
 
@@ -34,6 +37,7 @@ export default function PropertyListings() {
                             description={property.description}
                             buttonText={property.buttonText}
                             imageSrc={property.imageSrc}
+                            href={property.href}
                         />
                     ))}
                 </div>

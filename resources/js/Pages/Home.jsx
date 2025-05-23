@@ -17,7 +17,7 @@ export default function Home({ auth }) {
             <Head title="Home" />
             <Banner />
             <div className="text-center" style={{borderColor: 'var(--bs-indigo)', background: 'rgb(255,241,222)'}}>
-                <Navbar />
+                {/* <Navbar /> */}
                 <Hero />
                 <PropertyListings />
                 <HelpSection />

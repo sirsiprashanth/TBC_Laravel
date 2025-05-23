@@ -91,7 +91,7 @@ export default function DubaiInvestment() {
                                             {/* View More Button */}
                                             <div className="mt-4 mb-3 d-flex justify-content-center w-100">
                                                 <Link 
-                                                    href="#" 
+                                                    href="/sell" 
                                                     className="btn d-flex align-items-center justify-content-center"
                                                     style={{
                                                         borderRadius: '25px',

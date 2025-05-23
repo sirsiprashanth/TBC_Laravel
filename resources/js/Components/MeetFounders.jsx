@@ -83,7 +83,7 @@ export default function MeetFounders() {
                                     </p>
                                     
                                     <Link 
-                                        href="#" 
+                                        href="/about-us" 
                                         className="btn text-white d-flex align-items-center justify-content-center mx-auto"
                                         style={{
                                             backgroundColor: '#1A202C',
