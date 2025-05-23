@@ -76,7 +76,7 @@
             <h4 class="heading-3">Price Range</h4><img src="images/vuesaxlineararrow-down.svg" loading="lazy" alt="" class="image-23">
           </div>
           <div id="w-node-_2e9a3b18-16d4-c607-5432-4820734164d3-46db6eea" class="div-block-6">
-            <h4 class="heading-3">Bedrooms</h4><img src="images/vuesaxlineararrow-down.svg" loading="lazy" alt="" class="image-24">
+            <h4 class="heading-3">All Types</h4><img src="images/vuesaxlineararrow-down.svg" loading="lazy" alt="" class="image-24">
           </div>
         </div><img src="images/Frame-4.png" loading="lazy" id="w-node-_69121cba-4169-b855-6bcf-cbc2d8483999-46db6eea" alt="">
       </div><img src="images/Dreams.png" loading="lazy" width="Auto" data-w-id="88245cba-f510-cf39-ac13-8ccdcf82261f" alt="" class="dream"><img src="images/Sidra-Bldg.png" loading="lazy" data-w-id="731be565-0db4-5c50-02cb-f58696b0163b" sizes="(max-width: 1376px) 100vw, 1376px" alt="" srcset="images/Sidra-Bldg-p-500.png 500w, images/Sidra-Bldg-p-800.png 800w, images/Sidra-Bldg-p-1080.png 1080w, images/Sidra-Bldg.png 1376w" class="building"><img src="images/beyond-your.png" loading="lazy" data-w-id="219bb9e0-34c1-8e83-9780-1bb74802cbdc" alt="" class="beyond-your1"><img src="images/Clouds.png" loading="lazy" data-w-id="5101944e-1e49-aeff-39c5-d040b323a61c" sizes="(max-width: 881px) 100vw, 881px" alt="" srcset="images/Clouds-p-500.png 500w, images/Clouds-p-800.png 800w, images/Clouds.png 881w" class="clouds1"><img src="images/Sidra-Sky.jpg" loading="lazy" width="Auto" data-w-id="ab2a278c-b068-c472-8360-4988aca6e35e" alt="" srcset="images/Sidra-Sky-p-500.jpg 500w, images/Sidra-Sky-p-800.jpg 800w, images/Sidra-Sky-p-1080.jpg 1080w, images/Sidra-Sky.jpg 1377w" sizes="(max-width: 1377px) 100vw, 1377px" class="sidra-sky">
@@ -293,5 +293,241 @@
   </div> -->
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=67ed063bd9b9081446db6ee1" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  
+  <script>
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Filter data
+      let filterData = {
+        propertyFor: 'Buy',
+        location: '',
+        bedrooms: '',
+        min_price: '',
+        max_price: '',
+        property_type: ''
+      };
+
+      // Dropdown options
+      const bedroomsOptions = ['Any', '1', '2', '3', '4', '5+'];
+      const priceRangeOptions = [
+        { label: 'Any', min: '', max: '' },
+        { label: 'Under 1M', min: '0', max: '1000000' },
+        { label: '1M - 2M', min: '1000000', max: '2000000' },
+        { label: '2M - 5M', min: '2000000', max: '5000000' },
+        { label: '5M - 10M', min: '5000000', max: '10000000' },
+        { label: '10M+', min: '10000000', max: '' }
+      ];
+      const propertyTypeOptions = ['Any', 'Apartment', 'Villa', 'Townhouse', 'Penthouse'];
+      const propertyForOptions = ['Buy', 'Rent'];
+
+      // Create dropdown HTML
+      function createDropdownHTML(options, currentValue, onSelect, type = 'default') {
+        const dropdownId = 'dropdown-' + Math.random().toString(36).substr(2, 9);
+        let optionsHTML = '';
+        
+        if (type === 'priceRange') {
+          options.forEach((option, index) => {
+            const isSelected = getPriceRangeDisplayText() === option.label;
+            optionsHTML += `
+              <div class="dropdown-item" data-value="${JSON.stringify(option)}" style="
+                padding: 10px 16px;
+                cursor: pointer;
+                font-family: inherit;
+                border-bottom: ${index === options.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.1)'};
+                background-color: ${isSelected ? '#f7945f20' : 'transparent'};
+                font-weight: ${isSelected ? 'bold' : 'normal'};
+              " onmouseover="this.style.backgroundColor='#f5f5f5'" onmouseout="this.style.backgroundColor='${isSelected ? '#f7945f20' : 'transparent'}'">
+                ${option.label}
+              </div>
+            `;
+          });
+        } else {
+          options.forEach((option, index) => {
+            const isSelected = currentValue === option;
+            optionsHTML += `
+              <div class="dropdown-item" data-value="${option}" style="
+                padding: 10px 16px;
+                cursor: pointer;
+                font-family: inherit;
+                border-bottom: ${index === options.length - 1 ? 'none' : '1px solid rgba(0,0,0,0.1)'};
+                background-color: ${isSelected ? '#f7945f20' : 'transparent'};
+                font-weight: ${isSelected ? 'bold' : 'normal'};
+              " onmouseover="this.style.backgroundColor='#f5f5f5'" onmouseout="this.style.backgroundColor='${isSelected ? '#f7945f20' : 'transparent'}'">
+                ${option}
+              </div>
+            `;
+          });
+        }
+
+        return `
+          <div id="${dropdownId}" style="
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            background-color: white;
+            border: 2px solid #f7945f;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            margin-top: 5px;
+            font-family: inherit;
+          ">
+            ${optionsHTML}
+          </div>
+        `;
+      }
+
+      // Helper function for price range display
+      function getPriceRangeDisplayText() {
+        const selectedRange = priceRangeOptions.find(
+          option => option.min === filterData.min_price && option.max === filterData.max_price
+        );
+        return selectedRange ? selectedRange.label : 'Price Range';
+      }
+
+      // Close all dropdowns
+      function closeAllDropdowns() {
+        document.querySelectorAll('[id^="dropdown-"]').forEach(dropdown => {
+          dropdown.remove();
+        });
+      }
+
+      // Handle dropdown clicks
+      function handleDropdownClick(element, options, currentValue, onSelect, type = 'default') {
+        // Close other dropdowns first
+        closeAllDropdowns();
+        
+        // Create and show dropdown
+        const dropdownHTML = createDropdownHTML(options, currentValue, onSelect, type);
+        element.style.position = 'relative';
+        element.insertAdjacentHTML('beforeend', dropdownHTML);
+        
+        // Add click handlers to dropdown items
+        const dropdown = element.querySelector('[id^="dropdown-"]');
+        dropdown.querySelectorAll('.dropdown-item').forEach(item => {
+          item.addEventListener('click', function(e) {
+            e.stopPropagation();
+            let value = this.getAttribute('data-value');
+            
+            if (type === 'priceRange') {
+              value = JSON.parse(value);
+              filterData.min_price = value.min;
+              filterData.max_price = value.max;
+              element.querySelector('h4').textContent = value.label;
+            } else {
+              filterData[onSelect] = value;
+              element.querySelector('h4').textContent = value;
+            }
+            
+            closeAllDropdowns();
+          });
+        });
+      }
+
+      // Add click handlers to filter elements
+      const buyFilter = document.querySelector('[id*="1c9371bd-3d13-8f02-c84d-e57240cec65e"]');
+      const locationFilter = document.querySelector('[id*="6cdaff7b-a34c-82dc-8bd2-3fcbe446e531"]');
+      const bedroomsFilter = document.querySelector('[id*="dfba4f27-58a9-e154-f58a-820e2847d0d3"]');
+      const priceRangeFilter = document.querySelector('[id*="78f58a94-d6c5-46cf-ec1a-eee70f209926"]');
+      const propertyTypeFilter = document.querySelector('[id*="2e9a3b18-16d4-c607-5432-4820734164d3"]');
+
+      if (buyFilter) {
+        buyFilter.addEventListener('click', function(e) {
+          e.stopPropagation();
+          handleDropdownClick(this, propertyForOptions, filterData.propertyFor, 'propertyFor');
+        });
+      }
+
+      if (bedroomsFilter) {
+        bedroomsFilter.addEventListener('click', function(e) {
+          e.stopPropagation();
+          handleDropdownClick(this, bedroomsOptions, filterData.bedrooms, 'bedrooms');
+        });
+      }
+
+      if (priceRangeFilter) {
+        priceRangeFilter.addEventListener('click', function(e) {
+          e.stopPropagation();
+          handleDropdownClick(this, priceRangeOptions, '', '', 'priceRange');
+        });
+      }
+
+      if (propertyTypeFilter) {
+        propertyTypeFilter.addEventListener('click', function(e) {
+          e.stopPropagation();
+          handleDropdownClick(this, propertyTypeOptions, filterData.property_type, 'property_type');
+        });
+      }
+
+      // Handle location input (convert to input field on click)
+      if (locationFilter) {
+        locationFilter.addEventListener('click', function(e) {
+          e.stopPropagation();
+          closeAllDropdowns();
+          
+          const heading = this.querySelector('h4');
+          if (heading && !this.querySelector('input')) {
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.placeholder = 'City, Community or Area';
+            input.value = filterData.location;
+            input.style.cssText = `
+              border: none;
+              outline: none;
+              background: transparent;
+              font-family: inherit;
+              font-size: inherit;
+              color: inherit;
+              width: 100%;
+            `;
+            
+            input.addEventListener('input', function() {
+              filterData.location = this.value;
+            });
+            
+            input.addEventListener('blur', function() {
+              if (!this.value) {
+                heading.textContent = 'City, Community Or Area';
+                this.remove();
+              }
+            });
+            
+            heading.style.display = 'none';
+            this.appendChild(input);
+            input.focus();
+          }
+        });
+      }
+
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.div-block-8, .div-block-7, .div-block-6')) {
+          closeAllDropdowns();
+        }
+      });
+
+      // Handle search button click (if exists)
+      const searchButton = document.querySelector('[id*="69121cba-4169-b855-6bcf-cbc2d8483999"]');
+      if (searchButton) {
+        searchButton.addEventListener('click', function() {
+          // Build query parameters
+          const params = new URLSearchParams();
+          if (filterData.location) params.append('location', filterData.location);
+          if (filterData.bedrooms && filterData.bedrooms !== 'Any') params.append('bedrooms', filterData.bedrooms);
+          if (filterData.min_price) params.append('min_price', filterData.min_price);
+          if (filterData.max_price) params.append('max_price', filterData.max_price);
+          if (filterData.property_type && filterData.property_type !== 'Any') params.append('property_type', filterData.property_type);
+          
+          // Navigate to appropriate route
+          const targetRoute = filterData.propertyFor.toLowerCase() === 'rent' ? '/rent' : '/sell';
+          const queryString = params.toString();
+          const url = queryString ? `${targetRoute}?${queryString}` : targetRoute;
+          
+          window.location.href = url;
+        });
+      }
+    });
+  </script>
 </body>
 </html>
