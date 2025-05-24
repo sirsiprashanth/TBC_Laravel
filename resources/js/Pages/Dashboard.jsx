@@ -128,7 +128,7 @@ export default function Dashboard() {
                                         Quick Links
                                     </h3>
                                     <div className="row g-3">
-                                        <div className="col-md-4">
+                                        <div className="col-md-3">
                                             <Link
                                                 href={route('sell')}
                                                 className="d-block text-decoration-none"
@@ -149,7 +149,7 @@ export default function Dashboard() {
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-md-3">
                                             <Link
                                                 href={route('rent')}
                                                 className="d-block text-decoration-none"
@@ -170,7 +170,7 @@ export default function Dashboard() {
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div className="col-md-4">
+                                        <div className="col-md-3">
                                             <Link
                                                 href={route('profile.edit')}
                                                 className="d-block text-decoration-none"
@@ -188,6 +188,29 @@ export default function Dashboard() {
                                                 }}>
                                                     <i className="bi bi-person-circle" style={{ fontSize: '28px', display: 'block', marginBottom: '10px' }}></i>
                                                     <span style={{ fontSize: '16px' }}>Edit Profile</span>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                        <div className="col-md-3">
+                                            <Link
+                                                href={route('logout')}
+                                                method="post"
+                                                as="button"
+                                                className="d-block text-decoration-none"
+                                            >
+                                                <div style={{ 
+                                                    backgroundColor: '#dc3545', 
+                                                    borderRadius: '8px',
+                                                    padding: '20px',
+                                                    textAlign: 'center',
+                                                    color: 'white',
+                                                    fontFamily: 'Glancyr',
+                                                    transition: 'all 0.3s ease',
+                                                    height: '100%',
+                                                    cursor: 'pointer'
+                                                }}>
+                                                    <i className="bi bi-box-arrow-right" style={{ fontSize: '28px', display: 'block', marginBottom: '10px' }}></i>
+                                                    <span style={{ fontSize: '16px' }}>Logout</span>
                                                 </div>
                                             </Link>
                                         </div>

@@ -53,6 +53,11 @@
                 <p data-figma-id="70:658" class="contact-us">Contact us</p>
               </a>
             </div>
+            <div class="frame-4" style="margin-left: 15px; background-color: #F97316;">
+              <a href="/login" id="auth-button" style="text-decoration: none; color: white;">
+                <p class="contact-us" style="color: white;">Login</p>
+              </a>
+            </div>
             <div class="menu-button-3 w-nav-button">
               <div class="w-icon-nav-menu"></div>
             </div>
@@ -525,6 +530,31 @@
           const url = queryString ? `${targetRoute}?${queryString}` : targetRoute;
           
           window.location.href = url;
+        });
+      }
+    });
+    
+    // Check if user is authenticated by making a request to the parent window
+    window.addEventListener('load', function() {
+      // Try to get auth status from parent window
+      if (window.parent && window.parent !== window) {
+        // Send message to parent to get auth status
+        window.parent.postMessage({ type: 'getAuthStatus' }, '*');
+        
+        // Listen for response
+        window.addEventListener('message', function(event) {
+          if (event.data.type === 'authStatus') {
+            const authButton = document.getElementById('auth-button');
+            if (authButton) {
+              if (event.data.isAuthenticated) {
+                authButton.href = '/dashboard';
+                authButton.querySelector('p').textContent = 'Dashboard';
+              } else {
+                authButton.href = '/login';
+                authButton.querySelector('p').textContent = 'Login';
+              }
+            }
+          }
         });
       }
     });
