@@ -66,19 +66,6 @@ export default function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navcol-5">
                     <ul className="navbar-nav ms-auto align-items-center">
-                        {/* Buy and Off-Plan links hidden until content is available */}
-                        {/* <li className="nav-item">
-                            <Link 
-                                className="nav-link" 
-                                href="/buy"
-                                style={{
-                                    ...navStyles.navItem,
-                                    ...(isActive('/buy') ? navStyles.activeNavItem : {})
-                                }}
-                            >
-                                Buy
-                            </Link>
-                        </li> */}
                         <li className="nav-item">
                             <Link 
                                 className="nav-link" 
@@ -103,7 +90,7 @@ export default function Navbar() {
                                 Rent
                             </Link>
                         </li>
-                        {/* <li className="nav-item">
+                        <li className="nav-item">
                             <Link 
                                 className="nav-link" 
                                 href="/off-plan"
@@ -114,7 +101,7 @@ export default function Navbar() {
                             >
                                 Off Plan
                             </Link>
-                        </li> */}
+                        </li>
                         <li className="nav-item">
                             <Link 
                                 className="nav-link" 
