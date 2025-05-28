@@ -28,7 +28,7 @@ export default function Home({ auth }) {
                 <TestimonialVideos />
                 <Footer />
                 
-                {auth.user ? (
+                {/* {auth.user ? (
                     <Link href={route('dashboard')} className="btn btn-primary">
                         Dashboard
                     </Link>
@@ -41,7 +41,7 @@ export default function Home({ auth }) {
                             Register
                         </Link>
                     </>
-                )}
+                )} */}
             </div>
         </>
     );

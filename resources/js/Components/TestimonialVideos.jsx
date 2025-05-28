@@ -38,18 +38,18 @@ export default function TestimonialVideos() {
             <div className="container-fluid px-0">
                 {/* Header section - 3 columns with top border */}
                 <div className="row border-top border-bottom mb-5" style={{ borderColor: '#232A40 !important' }}>
-                    <div className="col-2 border-end" style={{ borderColor: '#232A40 !important' }}></div>
-                    <div className="col-5 py-4 text-center border-end" style={{ borderColor: '#232A40 !important' }}>
-                        <p className="mb-1" style={{ color: '#6B7280', fontFamily: 'Glancyr', fontSize: '14px' }}>CUSTOMER REVIEWS</p>
+                    <div className="col-1 border-end" style={{ borderColor: '#232A40 !important' }}></div>
+                    <div className="col-7 py-4 text-center border-end" style={{ borderColor: '#232A40 !important' }}>
+                        <p className="mb-1" style={{ color: '#6B7280', fontSize: '14px', textAlign: 'left' }}>CUSTOMER REVIEWS</p>
                         <h2 style={{ 
-                            fontFamily: 'Agatho', 
-                            fontSize: '36px',
+                            fontSize: '50px',
                             color: '#1F2937',
                             fontWeight: '500',
-                            margin: 0
+                            margin: 0,
+                            textAlign: 'left'
                         }}>Real Experience, Real People</h2>
                     </div>
-                    <div className="col-5"></div>
+                    <div className="col-4"></div>
                 </div>
 
                 {/* Testimonial Carousel */}

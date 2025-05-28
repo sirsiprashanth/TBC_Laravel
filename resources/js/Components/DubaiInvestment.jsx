@@ -46,11 +46,10 @@ export default function DubaiInvestment() {
                                 
                                 {/* Right Column - Title */}
                                 <div className="col-md-8 ps-md-4 d-flex flex-column justify-content-center align-items-start">
-                                    <p className="text-uppercase mb-1" style={{ color: '#e0d6c8', fontFamily: 'Glancyr', fontSize: '14px'}}>
+                                    <p className="text-uppercase mb-1" style={{ color: '#e0d6c8', fontSize: '14px'}}>
                                         INVEST WHERE THE WORLD'S ELITE CHOOSE TO CALL HOME.
                                     </p>
                                     <h2 className="mb-4" style={{ 
-                                        fontFamily: 'Agatho', 
                                         color: '#e0d6c8', 
                                         fontSize: '40px',
                                         lineHeight: '1.2',
@@ -66,24 +65,24 @@ export default function DubaiInvestment() {
                         {/* Benefits Section - Only visible on scroll or additional content */}
                         <div className="container position-relative" style={{ zIndex: 2 }}>
                             <div className="row py-3 justify-content-center">
-                                <div className="col-md-8 offset-md-4 d-flex align-items-center">
+                                <div className="col-md-11">
                                     <div className="row justify-content-center">
-                                        <div className="col-md-8 d-flex flex-column align-items-center">
+                                        <div className="col-md-8 contect-bot d-flex flex-column align-items-center">
                                             {/* Dubai Benefits List */}
                                             <div className="dubai-benefits mb-4 d-flex flex-column align-items-start">
-                                                <p className="text-white mb-2 w-100 text-start" style={{ fontFamily: 'Glancyr', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
+                                                <p className="text-white mb-2 w-100 text-start" style={{ borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
                                                     Dubai Is More Than A City—It's A Lifestyle. As A World-Class Business And Luxury Hub, It Offers:
                                                 </p>
-                                                <p className="text-white mb-2 w-100 text-start" style={{ fontFamily: 'Glancyr', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
+                                                <p className="text-white mb-2 w-100 text-start" style={{ borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
                                                     100% Freehold Ownership For Foreign Investors
                                                 </p>
-                                                <p className="text-white mb-2 w-100 text-start" style={{ fontFamily: 'Glancyr', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
+                                                <p className="text-white mb-2 w-100 text-start" style={{ borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
                                                     High ROI & Tax-Free Benefits
                                                 </p>
-                                                <p className="text-white mb-2 w-100 text-start" style={{ fontFamily: 'Glancyr', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
+                                                <p className="text-white mb-2 w-100 text-start" style={{ borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
                                                     Golden Visa Opportunities
                                                 </p>
-                                                <p className="text-white mb-2 w-100 text-start" style={{ fontFamily: 'Glancyr', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
+                                                <p className="text-white mb-2 w-100 text-start" style={{ borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
                                                     A Thriving Luxury Market & Unmatched Architectural Marvels
                                                 </p>
                                             </div>
@@ -92,14 +91,12 @@ export default function DubaiInvestment() {
                                             <div className="mt-4 mb-3 d-flex justify-content-center w-100">
                                                 <Link 
                                                     href="/sell" 
-                                                    className="btn d-flex align-items-center justify-content-center"
+                                                    className="btn w-80 d-flex align-items-center justify-content-center"
                                                     style={{
                                                         borderRadius: '25px',
                                                         border: '1px solid #e0d6c8',
-                                                        fontFamily: 'Glancyr',
                                                         color: '#e0d6c8',
                                                         backgroundColor: 'transparent',
-                                                        width: '180px',
                                                         transition: 'all 0.3s ease'
                                                     }}
                                                 >
@@ -118,7 +115,7 @@ export default function DubaiInvestment() {
                                                 backgroundImage: 'url(/assets/img/dubai-property.png)',
                                                 backgroundSize: 'cover',
                                                 backgroundPosition: 'center',
-                                                minHeight: '200px',
+                                                minHeight: '450px',
                                                 borderRadius: '6px'
                                             }}></div>
                                         </div>

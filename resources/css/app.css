@@ -1,18 +1,118 @@
 /* Bootstrap */
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* Custom styles */
-body {
-    background: rgb(255,241,222);
-}
-
-/* Font styles will be added via custom classes */
-.font-agatho {
-    font-family: 'Agatho', serif;
-}
-
-.font-glancyr {
-    font-family: 'Glancyr', sans-serif;
-}
-
 /* Remove Tailwind directives temporarily */
+#app iframe {
+    padding: 23px !important;
+    overflow: hidden !important;
+    height: 100% !important;
+    background: #FFF0DE;
+}
+.pro-list-box {
+    border: 1px solid rgba(35, 42, 64, 0.5);
+    padding: 15px !important;
+    height: 100%;
+}
+.border-end {
+    border-right: var(--bs-border-width) var(--bs-border-style) rgba(35, 42, 64, 0.3) !important;
+}
+  .pro-list-box h4 {
+    font-size: 18px;
+    margin: 10px 0 10px 0 !important;
+    display: inline-block;
+    width: 100%;
+}
+.pro-list-box p {
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+  .pro-list-box a.btn.px-4.py-2 {
+    width: 100%;
+    font-size: 18px;
+    height: 45px;
+  }
+  
+  body {
+    background: #FFF0DE;
+}
+
+  .pro-list-box a.btn.px-4 {
+    width: 90%;
+    margin-bottom: 10px;
+}
+.service-card .col-md-7.ps-md-4 h3, .service-card .col-md-7.ps-md-4 p {
+    text-align: left;
+    font-size: 16px;
+    margin: 0px 0 10px 0;
+}
+
+
+.container.position-relative .row.py-5 .col-md-4, .container.position-relative .row.py-5 .col-md-8 {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+.container.position-relative .row.py-5 .col-md-8 p {
+    color: #fff !important;
+}
+
+.col-md-8.contect-bot.d-flex.flex-column.align-items-center p {
+    width: 90% !important;
+}
+
+.col-md-8.contect-bot.d-flex.flex-column.align-items-center {
+    justify-content: end;
+}
+
+a.btn.w-80.d-flex.align-items-center.justify-content-center {
+    width: 80%;
+    float: left !important;
+}
+
+
+
+footer.p-4 h2, footer.p-4 p {
+    font-family: 'Agatho' !important;
+    font-size: 50px !important;
+}
+
+footer.p-4 .d-flex.justify-content-end.mb-4 a.text-white.mx-3 {
+    font-family: 'Glancyr' !important;
+}
+
+p.text-muted {
+    margin: 0;
+}
+
+.border {
+    border: var(--bs-border-width) var(--bs-border-style) rgba(35, 42, 64, 0.5) !important;
+}
+
+.col-md-5.text-center.text-md-start.border {
+    border-right: 1px solid transparent !important;
+}
+.col-md-1.border.border-end-0 {
+    border-right: 0px !important;
+    border-left: 0px !important;
+}
+.col-md-6.d-flex.align-items-center.border.border-start-0 {
+    border-right: 0 !important;
+}
+
+.h1, h1 {
+    font-size: 2.8rem;
+}
+
+
+.border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) rgba(35, 42, 64, 0.3) !important;
+}
+.border-top {
+    border-top: var(--bs-border-width) var(--bs-border-style) rgba(35, 42, 64, 0.3) !important;
+}
+footer.p-4 .border-top {
+    border-top: var(--bs-border-width) var(--bs-border-style) rgb(135 135 135 / 30%) !important;
+}

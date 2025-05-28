@@ -1,3 +1,25 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+section.my-3.ex-resi {
+  border: 1px solid #000 !important;
+}
+p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.ex-resi p.text-muted {
+  color: #7C99B4;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 !important;
+}
+
+
 @media (min-width: 300px) {
   .someInformation {
     font-family: Agatho;

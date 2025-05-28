@@ -10,7 +10,7 @@ export default function MeetFounders() {
             <div className="container">
                 <div className="row border" style={{ 
                     backgroundColor: '#FFF0DE',
-                    borderColor: '#e8e0d3 !important',
+                    borderColor: 'rgba(35, 42, 64, 0.5) !important',
                     borderRadius: '6px'
                 }}>
                     {/* Header section - 3 columns */}
@@ -19,14 +19,13 @@ export default function MeetFounders() {
                             <div className="col-md-5 border-end" style={{ borderColor: '#232A40 !important' }}></div>
                             <div className="col-md-5 py-4 ps-md-4 border-end" style={{ borderColor: '#232A40 !important' }}>
                                 <div className="d-flex flex-column">
-                                    <p className="mb-1 text-center" style={{ color: '#6B7280', fontFamily: 'Glancyr', fontSize: '14px' }}>OUR TEAM</p>
+                                    <p className="mb-1" style={{ color: '#6B7280', fontSize: '14px', textAlign:'right' }}>OUR TEAM</p>
                                     <h2 style={{ 
-                                        fontFamily: 'Agatho', 
                                         fontSize: '36px',
                                         color: '#1F2937',
                                         fontWeight: '500',
                                         margin: 0,
-                                        textAlign:'center'
+                                        textAlign:'right'
                                     }}>Meet The Founders</h2>
                                 </div>
                             </div>
@@ -51,7 +50,6 @@ export default function MeetFounders() {
                             <div className="col-md-6 py-5 ps-md-5 d-flex flex-column justify-content-center">
                                 <div>
                                     <p className="mb-4" style={{ 
-                                        fontFamily: 'Glancyr', 
                                         fontSize: '14px',
                                         color: '#4B5563',
                                         lineHeight: '1.7',
@@ -89,9 +87,8 @@ export default function MeetFounders() {
                                             backgroundColor: '#1A202C',
                                             borderRadius: '30px',
                                             fontSize: '14px',
-                                            fontFamily: 'Glancyr',
                                             padding: '12px 24px',
-                                            width:'80%',
+                                            width:'100%',
                                             textAlign:'center'
                                         }}
                                     >

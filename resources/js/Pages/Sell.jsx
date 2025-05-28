@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import SellBanner from '../Components/SellBanner';
 import FeaturedProperties from '../Components/FeaturedProperties';
 import TestimonialVideos from '../Components/TestimonialVideos';
+import Banner from '@/Components/Banner';
 
 export default function Sell({ auth, properties, count, filters, dropdown_options }) {
     const propertiesData = {
@@ -14,6 +15,7 @@ export default function Sell({ auth, properties, count, filters, dropdown_option
     return (
         <>
             <Head title="Sell Your Property" />
+            {/* <Banner /> */}
             <div style={{borderColor: 'var(--bs-indigo)', background: 'rgb(255,241,222)'}}>
                 <Navbar />
                 <SellBanner filters={filters} dropdownOptions={dropdown_options} />

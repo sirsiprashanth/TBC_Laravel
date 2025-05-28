@@ -5,7 +5,7 @@ import { Link } from '@inertiajs/react';
 const ServiceCard = ({ title, description, imageSrc, href }) => {
     return (
         <div className="service-card p-4 mb-4" style={{ 
-            border: '1px solid #E6D7C3',
+            border: '1px solid rgba(35, 42, 64, 0.3)',
             borderRadius: '8px',
             backgroundColor: '#FDF0DD'
         }}>
@@ -19,10 +19,10 @@ const ServiceCard = ({ title, description, imageSrc, href }) => {
                     />
                 </div>
                 <div className="col-md-7 ps-md-4 d-flex flex-column">
-                    <h3 className="mb-3" style={{ fontFamily: 'Agatho', color: '#232A40' }}>
+                    <h3 className="mb-3">
                         {title}
                     </h3>
-                    <p className="mb-4" style={{ fontFamily: 'Glancyr', color: '#313131', fontSize: '14px' }}>
+                    <p className="mb-4">
                         {description}
                     </p>
                     <div className="mt-auto">
@@ -31,11 +31,9 @@ const ServiceCard = ({ title, description, imageSrc, href }) => {
                             className="btn d-flex align-items-center justify-content-center mx-auto" 
                             style={{
                                 borderRadius: '25px',
-                                border: '1px solid #232A40',
-                                fontFamily: 'Glancyr',
+                                border: '1px solid rgba(35, 42, 64, 0.5)',
                                 color: '#232A40',
-                                backgroundColor: 'transparent',
-                                width: '180px'
+                                backgroundColor: 'transparent'
                             }}
                         >
                             <span className="me-2">View More</span>
