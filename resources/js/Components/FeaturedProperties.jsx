@@ -104,46 +104,6 @@ Website: www.boros.com
         document.body.removeChild(a);
     };
     
-    // Function to download all currently displayed properties
-    const downloadAllProperties = () => {
-        // Create header for the file
-        let allPropertiesContent = `
-========================================================
-           BOROS LUXURY PROPERTIES CATALOG
-              Current Featured Properties
-                  Total: ${currentProperties.length}
-========================================================
-
-`;
-        
-        // Add each property's details
-        currentProperties.forEach((property, index) => {
-            allPropertiesContent += formatPropertyDetails(property);
-            
-            // Add a separator between properties (except after the last one)
-            if (index < currentProperties.length - 1) {
-                allPropertiesContent += '\n\n';
-            }
-        });
-        
-        // Create a blob with the text
-        const blob = new Blob([allPropertiesContent], { type: 'text/plain' });
-        
-        // Create a download link
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.style.display = 'none';
-        a.href = url;
-        a.download = `BOROS-Luxury-Properties-Catalog.txt`;
-        
-        // Append to the document and trigger download
-        document.body.appendChild(a);
-        a.click();
-        
-        // Clean up
-        window.URL.revokeObjectURL(url);
-        document.body.removeChild(a);
-    };
     
     // This is kept for reference but no longer used since we now get properties from the backend
     const fallbackProperties = [];
@@ -188,19 +148,6 @@ Website: www.boros.com
                                         Penthouse
                                     </button>
                                 </div>
-                                {!loading && !error && currentProperties.length > 0 && (
-                                    <button 
-                                        onClick={downloadAllProperties}
-                                        className="btn btn-primary"
-                                        style={{ 
-                                            backgroundColor: '#F7945F', 
-                                            borderColor: '#F7945F',
-                                            fontFamily: 'Glancyr'
-                                        }}
-                                    >
-                                        Download All Properties
-                                    </button>
-                                )}
                             </div>
                         </div>
                     </div>

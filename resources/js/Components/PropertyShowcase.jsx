@@ -5,7 +5,7 @@ export default function PropertyShowcase() {
         <div className="container-fluid py-5" style={{ 
             background: '#FFF0DE'
         }}>
-            <div className="container">
+            <div className="container p-0">
                 <div 
                     className="property-image-container" 
                     style={{

@@ -13,37 +13,49 @@ export default function Footer() {
                     <div className="col-md-12 mb-4">
                         {/* Navigation Links */}
                         <div className="d-flex justify-content-end mb-4">
-                            <Link href="#" className="text-white mx-3" style={{ textDecoration: 'none', fontFamily: 'Glancyr' }}>Buy</Link>
                             <Link href="#" className="text-white mx-3" style={{ textDecoration: 'none', fontFamily: 'Glancyr' }}>Sell</Link>
                             <Link href="#" className="text-white mx-3" style={{ textDecoration: 'none', fontFamily: 'Glancyr' }}>Rent</Link>
                             <Link href="#" className="text-white mx-3" style={{ textDecoration: 'none', fontFamily: 'Glancyr' }}>Off-Plan</Link>
                             <Link href="#" className="text-white mx-3" style={{ textDecoration: 'none', fontFamily: 'Glancyr' }}>About Us</Link>
                         </div>
                     </div>
-
-                    <div className="col-md-6">
+<div className="col-md-1"></div>
+                    <div className="col-md-5">
                         {/* Main Heading */}
                         <h2 style={{ 
                             fontFamily: 'Agatho', 
-                            fontSize: '42px', 
+                            fontSize: '56px', 
                             color: '#E0D6C8',
                             letterSpacing: '1px',
-                            fontWeight: '400'
+                            fontWeight: '400',
+                            textAlign: 'start'
                         }}>
                             The Ultimate Collection
                         </h2>
                         <p style={{ 
                             fontFamily: 'Agatho', 
-                            fontSize: '36px', 
+                            fontSize: '56px', 
                             color: '#E0D6C8',
                             letterSpacing: '1px',
-                            fontWeight: '300'
+                            fontWeight: '300',
+                            textAlign: 'start'
                         }}>
                             Where Luxury Meets Legacy.
                         </p>
                     </div>
 
                     <div className="col-md-6">
+                        {/* Social Media Icons */}
+                        <div className="d-flex justify-content-end mt-4">
+                           
+                        </div>
+                    </div>
+<div className="col-md-1"></div>
+                    <div className="col-md-5">
+                        
+                    </div>
+
+                    <div className="col-md-6 mb-5">
                         {/* Social Media Icons */}
                         <div className="d-flex justify-content-end mt-4">
                             <Link href="#" className="mx-2">
@@ -103,7 +115,7 @@ export default function Footer() {
                             src="/assets/img/Group.png" 
                             alt="THE BOROS COLLECTION" 
                             className="img-fluid" 
-                            style={{ maxWidth: '700px' }}
+                            // style={{ maxWidth: '700px' }}
                         />
                     </div>
                 </div>

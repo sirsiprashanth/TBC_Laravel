@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { usePage } from '@inertiajs/react';
+import { usePage, router } from '@inertiajs/react';
 import Navbar from './Navbar';
 
 export default function Banner() {
@@ -24,6 +24,9 @@ export default function Banner() {
                     type: 'authStatus',
                     isAuthenticated: !!auth.user
                 }, '*');
+            } else if (event.data.type === 'navigate' && event.data.url) {
+                // Handle navigation from iframe using Inertia
+                router.visit(event.data.url);
             }
         };
         

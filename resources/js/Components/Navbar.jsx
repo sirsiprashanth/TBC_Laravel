@@ -139,7 +139,7 @@ export default function Navbar() {
                         Contact Us
                     </Link>
                     
-                    {auth.user ? (
+                    {auth.user && (
                         <Link 
                             className="btn" 
                             role="button" 
@@ -156,24 +156,6 @@ export default function Navbar() {
                             }}
                         >
                             Dashboard
-                        </Link>
-                    ) : (
-                        <Link 
-                            className="btn" 
-                            role="button" 
-                            href="/login"
-                            style={{
-                                fontFamily: 'Glancyr',
-                                fontSize: '16px',
-                                fontWeight: '500',
-                                backgroundColor: '#F97316',
-                                color: 'white',
-                                borderRadius: '25px',
-                                padding: '8px 24px',
-                                border: 'none'
-                            }}
-                        >
-                            Login
                         </Link>
                     )}
                 </div>

@@ -8,7 +8,7 @@ export default function OffPlanBanner() {
                 height: '80vh', 
                 minHeight: '600px',
                 overflow: 'hidden',
-                backgroundImage: 'url(/assets/img/dubai_skyline.png)',
+                backgroundImage: 'url(/assets/img/dubai_skyline.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
@@ -26,7 +26,7 @@ export default function OffPlanBanner() {
                                 zIndex: 1,
                                 paddingBottom: '100px'
                              }}>
-                            <h1 className="mb-0" style={{ 
+                            {/* <h1 className="mb-0" style={{ 
                                 fontFamily: 'Agatho', 
                                 fontSize: '5rem',
                                 fontWeight: '300',
@@ -45,7 +45,7 @@ export default function OffPlanBanner() {
                                 textAlign: 'left'
                             }}>
                                 Boros Secured.
-                            </h1>
+                            </h1> */}
                         </div>
                     </div>
                 </div>

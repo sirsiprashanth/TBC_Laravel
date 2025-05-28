@@ -5,7 +5,7 @@ export default function AboutUsBanner() {
         <div 
             className="container-fluid p-0" 
             style={{
-                backgroundImage: 'url(/assets/img/dubai_skyline.png)',
+                backgroundImage: 'url(/assets/img/about_us.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -27,7 +27,7 @@ export default function AboutUsBanner() {
             <div className="container-fluid h-100 position-relative">
                 <div className="row h-100">
                     <div className="col-md-6 d-flex align-items-center">
-                        <h1 
+                        {/* <h1 
                             style={{ 
                                 fontFamily: 'Agatho', 
                                 fontSize: '5rem',
@@ -54,7 +54,7 @@ export default function AboutUsBanner() {
                             }}
                         >
                             What<br/>Is Boros?
-                        </h2>
+                        </h2> */}
                     </div>
                 </div>
             </div>

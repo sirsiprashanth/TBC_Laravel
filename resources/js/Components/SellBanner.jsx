@@ -134,7 +134,7 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
             <div className="position-relative" style={{
                 height: '80vh',
                 overflow: 'visible', // Allow dropdowns to overflow
-                backgroundImage: 'url(/assets/img/City_view.png)',
+                backgroundImage: 'url(/assets/img/City_view.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}>
@@ -153,7 +153,7 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                         zIndex: 2,
                         textAlign: 'left'
                      }}>
-                    <h1 className="mb-0" style={{
+                    {/* <h1 className="mb-0" style={{
                         fontFamily: 'Agatho',
                         fontSize: '5rem',
                         fontWeight: '300',
@@ -170,7 +170,7 @@ export default function SellBanner({ filters = {}, dropdownOptions = {} }) {
                         color: '#fff',
                     }}>
                         Concrete Reality
-                    </h1>
+                    </h1> */}
                 </div>
 
                 {/* Search Form - Functional */}

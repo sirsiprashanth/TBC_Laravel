@@ -27,39 +27,39 @@
             <nav role="navigation" class="nav-menu-wrapper-3 w-nav-menu">
               <ul role="list" class="nav-menu-two-2 w-list-unstyled">
                 <li class="list-item-2">
-                  <a href="/sell" style="text-decoration: none; color: inherit;">
+                  <a href="/sell" onclick="navigateParent('/sell'); return false;" style="text-decoration: none; color: inherit;">
                     <p data-figma-id="70:653" class="sell">Sell</p>
                   </a>
                 </li>
                 <li class="list-item-3">
-                  <a href="/rent" style="text-decoration: none; color: inherit;">
+                  <a href="/rent" onclick="navigateParent('/rent'); return false;" style="text-decoration: none; color: inherit;">
                     <p data-figma-id="70:654" class="rent">Rent</p>
                   </a>
                 </li>
                 <li class="list-item-4">
-                  <a href="/off-plan" style="text-decoration: none; color: inherit;">
+                  <a href="/off-plan" onclick="navigateParent('/off-plan'); return false;" style="text-decoration: none; color: inherit;">
                     <p data-figma-id="70:655" class="off-plan">Off Plan</p>
                   </a>
                 </li>
                 <li class="list-item-5" style="padding-right: 20px;">
-                  <a href="/about-us" style="text-decoration: none; color: inherit;">
+                  <a href="/about-us" onclick="navigateParent('/about-us'); return false;" style="text-decoration: none; color: inherit;">
                     <p data-figma-id="70:656" class="about-us">About Us</p>
                   </a>
                 </li>
                 <li class="list-item-6">
-                  <a href="/blogs" style="text-decoration: none; color: inherit;">
+                  <a href="/blogs" onclick="navigateParent('/blogs'); return false;" style="text-decoration: none; color: inherit;">
                     <p data-figma-id="70:657" class="about-us ">Blogs</p>
                   </a>
                 </li>
               </ul>
             </nav>
             <div data-figma-id="70:657" class="frame-4">
-              <a href="/contact-us" style="text-decoration: none; color: inherit;">
+              <a href="/contact-us" onclick="navigateParent('/contact-us'); return false;" style="text-decoration: none; color: inherit;">
                 <p data-figma-id="70:658" class="contact-us">Contact us</p>
               </a>
             </div>
-            <div class="frame-4" style="margin-left: 15px; background-color: #F97316;">
-              <a href="/login" id="auth-button" style="text-decoration: none; color: white;">
+            <div class="frame-4" style="margin-left: 15px; background-color: #F97316; display: none;">
+              <a href="/login" id="auth-button" onclick="navigateParent(this.href); return false;" style="text-decoration: none; color: white;">
                 <p class="contact-us" style="color: white;">Login</p>
               </a>
             </div>
@@ -539,6 +539,20 @@
       }
     });
     
+    // Function to navigate parent window (for iframe navigation)
+    function navigateParent(url) {
+      if (window.parent && window.parent !== window) {
+        // Send navigation message to parent window
+        window.parent.postMessage({ 
+          type: 'navigate', 
+          url: url 
+        }, '*');
+      } else {
+        // Fallback for direct access
+        window.location.href = url;
+      }
+    }
+
     // Check if user is authenticated by making a request to the parent window
     window.addEventListener('load', function() {
       // Try to get auth status from parent window

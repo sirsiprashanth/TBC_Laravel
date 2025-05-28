@@ -2,8 +2,17 @@ import { Link } from '@inertiajs/react';
 
 export default function PropertyCard({ title, description, buttonText, imageSrc, href }) {
     return (
-        <div className="col-md-4 py-2" style={{borderColor: 'rgb(253, 240, 221)', background: 'rgb(253, 240, 221)'}}>
-            <div style={{padding: '15px', border: '1px solid #ede1cd', borderRadius: '8px', backgroundColor: 'rgb(253, 240, 221)'}}>
+        <div className="col-md-4 py-2" style={{borderColor: 'rgb(253, 240, 221)', background: 'rgb(253, 240, 221)', display: 'flex'}}>
+            <div style={{
+                padding: '15px', 
+                border: '1px solid #ede1cd', 
+                borderRadius: '8px', 
+                backgroundColor: 'rgb(253, 240, 221)',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
+                width: '100%'
+            }}>
                 <img 
                     src={imageSrc || "https://via.placeholder.com/350x200"} 
                     alt={title} 
@@ -14,7 +23,7 @@ export default function PropertyCard({ title, description, buttonText, imageSrc,
                 <p className="text-center mb-4" style={{fontFamily: 'Glancyr', color: '#313131'}}>
                     {description || "Private Sanctuaries in Dubai's Elite Communities."}
                 </p>
-                <div className="text-center">
+                <div className="text-center" style={{marginTop: 'auto'}}>
                     <Link 
                         href={href || "#"} 
                         className="btn px-4 py-2" 

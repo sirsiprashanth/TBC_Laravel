@@ -3,7 +3,7 @@ import { Link } from '@inertiajs/react';
 
 export default function DubaiInvestment() {
     return (
-        <div className="position-relative" style={{ overflow: 'hidden' }}>
+        <div className="position-relative mx-4" style={{ overflow: 'hidden' }}>
             <section 
                 className="vw-100 py-0"
                 style={{
@@ -25,7 +25,7 @@ export default function DubaiInvestment() {
                                 backgroundImage: 'url(/assets/img/dubai-skyline.png)',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
-                                opacity: '0.7'
+                                opacity: '0.7',
                             }}>
                         </div>
                         
@@ -33,8 +33,16 @@ export default function DubaiInvestment() {
                         <div className="container position-relative" style={{ zIndex: 2 }}>
                             <div className="row py-5">
                                 {/* Dubai Logo - Left Column */}
-                                <div className="col-md-4 border-end border-light-subtle d-flex align-items-center justify-content-center">
-                                    <div className="text-center mb-4 mb-md-0">
+                                <div className="col-md-4 border-end border-light-subtle d-flex align-items-center justify-content-center" style={{
+                                        borderTop: '1px solid #e9ecef',
+                                        borderBottom: '1px solid #e9ecef',
+                                        paddingTop: '20px',
+                                        paddingBottom: '20px'
+                                    }}>
+                                    <div className="text-center mb-4 mb-md-0" style={{
+                                        paddingTop: '20px',
+                                        paddingBottom: '20px'
+                                    }}>
                                         <img 
                                             src="/assets/img/dubai-logo.png" 
                                             alt="DUBAI" 
@@ -45,7 +53,12 @@ export default function DubaiInvestment() {
                                 </div>
                                 
                                 {/* Right Column - Title */}
-                                <div className="col-md-8 ps-md-4 d-flex flex-column justify-content-center align-items-start">
+                                <div className="col-md-8 ps-md-4 d-flex flex-column justify-content-center align-items-start" style={{
+                                    borderTop: '1px solid #e9ecef',
+                                    borderBottom: '1px solid #e9ecef',
+                                    paddingTop: '20px',
+                                    paddingBottom: '20px'
+                                }}>
                                     <p className="text-uppercase mb-1" style={{ color: '#e0d6c8', fontFamily: 'Glancyr', fontSize: '14px'}}>
                                         INVEST WHERE THE WORLD'S ELITE CHOOSE TO CALL HOME.
                                     </p>
@@ -66,9 +79,9 @@ export default function DubaiInvestment() {
                         {/* Benefits Section - Only visible on scroll or additional content */}
                         <div className="container position-relative" style={{ zIndex: 2 }}>
                             <div className="row py-3 justify-content-center">
-                                <div className="col-md-8 offset-md-4 d-flex align-items-center">
+                                <div className="col-md-8 ">
                                     <div className="row justify-content-center">
-                                        <div className="col-md-8 d-flex flex-column align-items-center">
+                                        <div className="col-md-6 d-flex flex-column align-items-center">
                                             {/* Dubai Benefits List */}
                                             <div className="dubai-benefits mb-4 d-flex flex-column align-items-start">
                                                 <p className="text-white mb-2 w-100 text-start" style={{ fontFamily: 'Glancyr', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '10px' }}>
@@ -99,27 +112,31 @@ export default function DubaiInvestment() {
                                                         fontFamily: 'Glancyr',
                                                         color: '#e0d6c8',
                                                         backgroundColor: 'transparent',
-                                                        width: '180px',
+                                                        width: '90%',
                                                         transition: 'all 0.3s ease'
                                                     }}
                                                 >
+                                                    <img 
+                                src="/assets/img/export.png" 
+                                alt="View More" 
+                                width="20" 
+                                height="20" 
+                                className="me-2"
+                            />
                                                     <span className="me-2">View More</span>
-                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" 
-                                                            stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                                                    </svg>
                                                 </Link>
                                             </div>
                                         </div>
                                         
                                         {/* Right image */}
-                                        <div className="col-md-4 mt-4 mt-md-0 d-flex align-items-center justify-content-center">
+                                        <div className="col-md-6 mt-4 mt-md-0 d-flex align-items-center justify-content-center">
                                             <div className="h-100 w-100" style={{
                                                 backgroundImage: 'url(/assets/img/dubai-property.png)',
                                                 backgroundSize: 'cover',
                                                 backgroundPosition: 'center',
-                                                minHeight: '200px',
-                                                borderRadius: '6px'
+                                                height: '491px !important',
+                                                borderRadius: '6px',
+                                                
                                             }}></div>
                                         </div>
                                     </div>

@@ -83,7 +83,7 @@ export default function TestimonialVideos() {
                                             key={testimonial.id} 
                                             className={`testimonial-item text-center mx-2 ${visibilityClass}`}
                                             style={{ 
-                                                width: '400px',
+                                                width: '500px',
                                                 transition: 'all 0.3s ease',
                                                 opacity
                                             }}
@@ -95,9 +95,9 @@ export default function TestimonialVideos() {
                                                     alt="Testimonial video" 
                                                     className="img-fluid w-100"
                                                     style={{ 
-                                                        borderRadius: '8px',
-                                                        height: '240px',
-                                                        objectFit: 'cover'
+                                                        // borderRadius: '8px',
+                                                        height: '300px',
+                                                        objectFit: 'contain'
                                                     }}
                                                 />
                                                 {/* Play button overlay */}
@@ -105,8 +105,8 @@ export default function TestimonialVideos() {
                                                     top: '50%',
                                                     left: '50%',
                                                     transform: 'translate(-50%, -50%)',
-                                                    width: '60px',
-                                                    height: '60px',
+                                                    width: '80px',
+                                                    height: '80px',
                                                     backgroundColor: 'rgba(255,255,255,0.9)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
